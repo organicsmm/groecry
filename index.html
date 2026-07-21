@@ -1,0 +1,1267 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wool Creations — Crochet Patterns</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<!-- Preconnect to speed up Whop checkout iframe load -->
+<link rel="preconnect" href="https://whop.com">
+<link rel="preconnect" href="https://t.whop.tw">
+<link rel="dns-prefetch" href="https://whop.com">
+<!-- Whop Pixel -->
+<script>
+!function(w,d,s,u,n,a,b){if(w[n])return;a=w[n]={q:[],t:+new Date,s:[],o:u,track:function(){a.q.push([+new Date].concat([].slice.call(arguments)))},setScope:function(){a.s=[].slice.call(arguments).filter(function(x){return typeof x==="string"});a.q.push([+new Date,"setScope"].concat(a.s))},scope:function(){var c=[].slice.call(arguments);return{track:function(){a.q.push([+new Date].concat([].slice.call(arguments)).concat([{__scope:c}]))}}}};b=d.createElement(s);b.async=1;b.src=u+"/s.js";d.getElementsByTagName(s)[0].parentNode.insertBefore(b,d.getElementsByTagName(s)[0])}(window,document,"script","https://t.whop.tw","whop");whop.setScope("biz_w6GV88VhXcx9mx");whop.track("page");
+</script>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{--black:#1a1a1a;--dark:#2d2d2d;--muted:#888;--lg:#f5f5f5;--border:#e8e8e8;--white:#fff;--gold:#f5a623;--red:#e53935;--green:#4caf50}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',sans-serif;background:#fff;color:var(--dark);line-height:1.6;font-size:14px}
+.page{display:none}.page.active{display:block}
+
+/* ── NAV ── */
+nav{position:fixed;top:0;width:100%;z-index:500;background:rgba(255,255,255,.97);backdrop-filter:blur(10px);border-bottom:1px solid var(--border);height:60px;display:flex;align-items:center}
+.nav-in{width:100%;max-width:1400px;margin:0 auto;padding:0 2rem;display:flex;align-items:center;justify-content:space-between}
+.nav-links{display:flex;gap:1.8rem;list-style:none}
+.nav-links a{text-decoration:none;color:var(--dark);font-size:.88rem;cursor:pointer;transition:color .2s}
+.nav-links a:hover{color:#000}
+.nav-logo{font-size:1.05rem;font-weight:700;color:#000;cursor:pointer;letter-spacing:.02em}
+.nav-right{display:flex;align-items:center;gap:1.2rem}
+.nav-icon{background:none;border:none;cursor:pointer;color:var(--dark);padding:.3rem;position:relative;display:flex}
+.cart-badge{position:absolute;top:-4px;right:-4px;background:#000;color:#fff;border-radius:50%;width:16px;height:16px;font-size:.6rem;display:none;align-items:center;justify-content:center;font-weight:700}
+
+/* ── HERO ── */
+.hero{margin-top:60px;position:relative;width:100%;height:calc(100vh - 60px);min-height:500px;overflow:hidden;display:flex;align-items:center;justify-content:center}
+.hero-bg{position:absolute;inset:0;background:url('https://woolcreations.shop/cdn/shop/files/96e9b33c29.jpg?v=1771608839&width=2000') center/cover no-repeat;filter:brightness(.55)}
+.hero-content{position:relative;z-index:2;text-align:center;color:#fff;padding:2rem;max-width:720px}
+.hero-content h1{font-size:clamp(2rem,5vw,3.5rem);font-weight:700;line-height:1.15;margin-bottom:1rem}
+.hero-content p{font-size:clamp(.9rem,2vw,1.05rem);color:rgba(255,255,255,.88);margin-bottom:2rem;max-width:520px;margin-left:auto;margin-right:auto}
+.hero-btn{background:#fff;color:#000;padding:.85rem 2.2rem;border-radius:6px;font-size:.9rem;font-weight:600;border:none;cursor:pointer;font-family:'Inter',sans-serif;transition:.2s}
+.hero-btn:hover{background:#f0f0f0;transform:translateY(-1px)}
+
+/* ── TICKER ── */
+.ticker{background:#000;color:rgba(255,255,255,.85);padding:.7rem 0;overflow:hidden;white-space:nowrap}
+.ticker-in{display:inline-flex;gap:2.5rem;animation:tick 35s linear infinite}
+.tick-item{display:flex;align-items:center;gap:.6rem;font-size:.8rem}
+.tick-stars{color:var(--gold)}
+@keyframes tick{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+
+/* ── SECTIONS ── */
+.sec{padding:4.5rem 2rem;max-width:1300px;margin:0 auto}
+.sec-bg{padding:4.5rem 2rem;background:var(--lg)}
+.sec-bg .inn{max-width:1300px;margin:0 auto}
+.sh-lbl{font-size:.7rem;letter-spacing:.15em;text-transform:uppercase;color:var(--muted);margin-bottom:.8rem}
+.sh-ttl{font-size:clamp(1.5rem,2.5vw,2rem);font-weight:700;color:#000;line-height:1.2}
+
+/* ── PROBLEM ── */
+.prob-sec{padding:5rem 2rem;background:#000;color:#fff}
+.prob-in{max-width:1300px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:center}
+.prob-lbl{font-size:.7rem;letter-spacing:.15em;text-transform:uppercase;color:rgba(255,255,255,.4);margin-bottom:1rem}
+.prob-ttl{font-size:clamp(1.6rem,2.5vw,2.2rem);font-weight:700;line-height:1.2;margin-bottom:1rem}
+.prob-txt{color:rgba(255,255,255,.65);margin-bottom:2rem;font-size:.93rem;line-height:1.75}
+.prob-list{list-style:none;display:flex;flex-direction:column;gap:.9rem}
+.prob-list li{color:rgba(255,255,255,.72);font-size:.9rem}
+.prob-img{border-radius:6px;overflow:hidden;aspect-ratio:4/5}
+.prob-img img{width:100%;height:100%;object-fit:cover;display:block}
+
+/* ── DIFF ── */
+.diff-sec{padding:5rem 2rem}
+.diff-in{max-width:1300px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:center}
+.diff-img{border-radius:6px;overflow:hidden;aspect-ratio:4/5;order:-1}
+.diff-img img{width:100%;height:100%;object-fit:cover;display:block}
+.diff-lbl{font-size:.7rem;letter-spacing:.15em;text-transform:uppercase;color:var(--muted);margin-bottom:1rem}
+.diff-ttl{font-size:clamp(1.6rem,2.5vw,2.2rem);font-weight:700;line-height:1.2;margin-bottom:1rem;color:#000}
+.perks{display:flex;flex-direction:column;gap:1rem;margin-top:1rem}
+.perk{display:flex;gap:1rem;padding:1rem;border:1px solid var(--border);border-radius:8px;background:var(--lg)}
+.perk-ico{font-size:1.1rem;flex-shrink:0;margin-top:.1rem}
+.perk h3{font-size:.88rem;font-weight:600;color:#000;margin-bottom:.2rem}
+.perk p{font-size:.8rem;color:var(--muted);line-height:1.5}
+
+/* ── LEVELS ── */
+.lvl-sec{padding:5rem 2rem;text-align:center}
+.lvl-sec h2{font-size:clamp(1.8rem,3.5vw,2.5rem);font-weight:800;color:#000;line-height:1.15;margin-bottom:.8rem}
+.lvl-sec .sub{font-size:.95rem;color:var(--muted);max-width:480px;margin:0 auto 3rem}
+.lvl-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;max-width:1300px;margin:0 auto}
+.lvl-card{border-radius:12px;padding:2rem;text-align:left;position:relative;overflow:hidden}
+.lvl-card.g{background:#e8f4e8}.lvl-card.y{background:#fef9e8}.lvl-card.r{background:#fdecea}
+.lvl-dot{width:12px;height:12px;border-radius:50%;margin-bottom:1.2rem}
+.lvl-card.g .lvl-dot{background:var(--green)}.lvl-card.y .lvl-dot{background:var(--gold)}.lvl-card.r .lvl-dot{background:var(--red)}
+.lvl-n{position:absolute;top:1rem;right:1.5rem;font-size:3.5rem;font-weight:800;color:rgba(0,0,0,.08);line-height:1}
+.lvl-card h3{font-size:1.15rem;font-weight:700;color:#000;margin-bottom:.7rem}
+.lvl-card p{font-size:.85rem;color:#555;margin-bottom:1.8rem;line-height:1.6}
+.lvl-btn{display:inline-block;color:#fff;padding:.55rem 1.3rem;border-radius:50px;font-size:.78rem;text-transform:uppercase;letter-spacing:.07em;font-weight:700;cursor:pointer;border:none;font-family:'Inter',sans-serif}
+.lvl-card.g .lvl-btn{background:var(--green)}.lvl-card.y .lvl-btn{background:var(--gold)}.lvl-card.r .lvl-btn{background:var(--red)}
+
+/* ── PRODUCTS ── */
+.prod-hdr{display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:2rem}
+.view-all{font-size:.85rem;color:#000;text-decoration:underline;cursor:pointer;font-weight:500}
+.prod-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.2rem}
+.prod-card{cursor:pointer;border-radius:6px;overflow:hidden;background:#fff;border:1px solid var(--border);transition:box-shadow .2s,transform .2s}
+.prod-card:hover{box-shadow:0 4px 16px rgba(0,0,0,.1);transform:translateY(-2px)}
+.prod-thumb{aspect-ratio:1;overflow:hidden;background:var(--lg);position:relative}
+.prod-thumb img{width:100%;height:100%;object-fit:cover;transition:transform .4s;display:block}
+.prod-card:hover .prod-thumb img{transform:scale(1.04)}
+.prod-bdg{position:absolute;top:8px;left:8px;background:#000;color:#fff;font-size:.65rem;padding:.2rem .55rem;border-radius:3px;text-transform:uppercase;letter-spacing:.05em;font-weight:600}
+.prod-bdg.sale{background:var(--red)}
+.prod-inf{padding:.85rem}
+.prod-stars{font-size:.72rem;color:var(--gold);margin-bottom:.4rem}
+.prod-inf h4{font-size:.85rem;font-weight:500;color:#000;margin-bottom:.4rem;line-height:1.35}
+.price-row{display:flex;align-items:center;gap:.4rem;margin-bottom:.5rem}
+.price{font-size:.88rem;font-weight:600;color:#000}
+.old-p{font-size:.78rem;color:var(--muted);text-decoration:line-through}
+.sale-p{color:var(--red)}
+.add-btn{width:100%;padding:.5rem;background:#000;color:#fff;border:none;border-radius:4px;cursor:pointer;font-size:.77rem;font-family:'Inter',sans-serif;font-weight:500;transition:.2s}
+.add-btn:hover{background:#333}
+
+/* ── NEWSLETTER ── */
+.nl-sec{background:#8bc34a;padding:4.5rem 2rem}
+.nl-in{max-width:1300px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center}
+.nl-lbl{font-size:.72rem;letter-spacing:.15em;text-transform:uppercase;color:rgba(0,0,0,.5);margin-bottom:.8rem;font-weight:600}
+.nl-ttl{font-size:clamp(1.8rem,3vw,2.6rem);font-weight:800;color:#000;line-height:1.15;margin-bottom:.8rem}
+.nl-sub{color:rgba(0,0,0,.6);font-size:.9rem;line-height:1.6}
+.nl-right{display:flex;flex-direction:column;gap:.8rem}
+.nl-inp{width:100%;padding:.9rem 1.2rem;border:none;border-radius:8px;font-family:'Inter',sans-serif;font-size:.9rem;outline:none;background:rgba(255,255,255,.7)}
+.nl-inp:focus{background:rgba(255,255,255,.9)}
+.nl-form-btn{background:#000;color:#fff;border:none;padding:1rem;border-radius:8px;cursor:pointer;font-family:'Inter',sans-serif;font-size:.9rem;font-weight:700;transition:.2s}
+.nl-form-btn:hover{background:#222}
+.nl-note{font-size:.75rem;color:rgba(0,0,0,.45);text-align:center}
+
+/* ── FOOTER ── */
+footer{background:#000;color:rgba(255,255,255,.55);padding:3rem 2rem}
+.foot-in{max-width:1300px;margin:0 auto;display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:3rem}
+.foot-logo{color:#fff;font-size:1rem;font-weight:700;display:block;margin-bottom:.8rem;cursor:pointer}
+.foot-brand p{font-size:.82rem;line-height:1.7;max-width:240px}
+footer h5{color:rgba(255,255,255,.9);font-size:.72rem;text-transform:uppercase;letter-spacing:.12em;margin-bottom:1.2rem;font-weight:600}
+.foot-links{list-style:none;display:flex;flex-direction:column;gap:.6rem}
+.foot-links a{color:rgba(255,255,255,.5);text-decoration:none;font-size:.84rem;cursor:pointer;transition:color .2s}
+.foot-links a:hover{color:rgba(255,255,255,.85)}
+.foot-btm{max-width:1300px;margin:2rem auto 0;padding-top:2rem;border-top:1px solid rgba(255,255,255,.1);display:flex;justify-content:space-between;font-size:.76rem;color:rgba(255,255,255,.3)}
+
+/* ── ALL PRODUCTS PAGE ── */
+#all-page{padding-top:60px;min-height:100vh}
+.all-in{max-width:1300px;margin:0 auto;padding:3rem 2rem}
+.pg-ttl{font-size:2rem;font-weight:700;color:#000;margin-bottom:.4rem}
+.pg-sub{color:var(--muted);font-size:.88rem;margin-bottom:2.5rem}
+.back-link{display:inline-flex;align-items:center;gap:.4rem;color:var(--muted);font-size:.84rem;cursor:pointer;margin-bottom:2rem;text-decoration:none}
+.back-link:hover{color:#000}
+
+/* ── PRODUCT DETAIL PAGE ── */
+#product-page{padding-top:60px;min-height:100vh}
+.pd-wrap{max-width:1300px;margin:0 auto;padding:2rem 2rem 3rem}
+.pd-crumb{font-size:.8rem;color:var(--muted);margin-bottom:2rem;display:flex;align-items:center;gap:.4rem;flex-wrap:wrap}
+.pd-crumb a{color:var(--muted);cursor:pointer;text-decoration:none}
+.pd-crumb a:hover{color:#000;text-decoration:underline}
+.pd-layout{display:grid;grid-template-columns:1fr 400px;gap:3rem;align-items:start}
+
+/* LEFT: 2-col masonry - no gaps */
+.pd-gallery{display:flex;gap:6px;align-items:flex-start}
+.pd-col{display:flex;flex-direction:column;gap:6px;flex:1;min-width:0}
+.pd-col img{width:100%;display:block;border-radius:4px;object-fit:cover;cursor:zoom-in;transition:opacity .2s}
+.pd-col img:hover{opacity:.88}
+
+/* RIGHT: sticky info */
+.pd-info{position:sticky;top:76px}
+.pd-ttl{font-size:1.45rem;font-weight:700;color:#000;line-height:1.25;margin-bottom:.6rem}
+.pd-star-row{display:flex;align-items:center;gap:.5rem;margin-bottom:.8rem}
+.pd-stars{color:var(--gold);font-size:.9rem}
+.pd-rev-ct{font-size:.82rem;color:var(--muted);text-decoration:underline;cursor:pointer}
+.pd-price{font-size:1.4rem;font-weight:700;color:#000;margin-bottom:1.2rem}
+.pd-old-p{text-decoration:line-through;color:var(--muted);font-size:1rem;margin-right:.4rem;font-weight:400}
+.pd-sale-p{color:var(--red)}
+.pd-add{width:100%;padding:1rem;background:#000;color:#fff;border:none;border-radius:6px;cursor:pointer;font-size:.95rem;font-family:'Inter',sans-serif;font-weight:600;display:flex;align-items:center;justify-content:center;gap:.5rem;transition:.2s;margin-bottom:1.5rem}
+.pd-add:hover{background:#222}
+.pd-hl{font-size:1.15rem;font-weight:700;color:#000;text-align:center;margin:0 0 1rem;line-height:1.35}
+.pd-right-img{margin:1rem 0;border-radius:6px;overflow:hidden}
+.pd-right-img img{width:100%;display:block;object-fit:cover;cursor:zoom-in}
+.pd-desc{font-size:.875rem;color:var(--muted);line-height:1.8}
+.pd-desc p{margin-bottom:.6rem}
+.pd-desc strong{color:#000}
+.pd-desc ul{margin:.5rem 0 .5rem 1.2rem;display:flex;flex-direction:column;gap:.3rem}
+.pd-desc hr{border:none;border-top:1px solid var(--border);margin:.8rem 0}
+.pd-ibox{margin-top:1.5rem;background:var(--lg);border-radius:6px;padding:1rem;font-size:.82rem;color:var(--muted);line-height:1.7}
+
+/* STICKY BAR */
+.sticky-bar{position:fixed;bottom:0;left:0;right:0;background:#fff;border-top:1px solid var(--border);padding:.8rem 2rem;display:none;align-items:center;justify-content:space-between;z-index:200;box-shadow:0 -4px 20px rgba(0,0,0,.08)}
+.sticky-bar.show{display:flex}
+.sticky-info{display:flex;align-items:center;gap:1rem}
+.sticky-img{width:44px;height:44px;border-radius:4px;overflow:hidden;background:var(--lg);flex-shrink:0}
+.sticky-img img{width:100%;height:100%;object-fit:cover}
+.sticky-name{font-size:.85rem;font-weight:600;color:#000}
+.sticky-price{font-size:.8rem;color:var(--muted)}
+.sticky-btn{background:#000;color:#fff;border:none;padding:.65rem 1.8rem;border-radius:6px;cursor:pointer;font-family:'Inter',sans-serif;font-weight:600;font-size:.85rem;display:flex;align-items:center;gap:.5rem;transition:.2s;white-space:nowrap}
+.sticky-btn:hover{background:#333}
+
+/* ── REVIEWS SECTION ── */
+.rev-wrap{max-width:1300px;margin:2rem auto 0;padding:0 2rem}
+.rev-summary{display:flex;align-items:center;gap:2.5rem;padding:2rem;border:1px solid var(--border);border-radius:8px;margin-bottom:1.5rem;flex-wrap:wrap}
+.rev-avg{text-align:center;min-width:90px}
+.rev-avg-n{font-size:2.8rem;font-weight:700;color:#000;line-height:1}
+.rev-avg-s{color:var(--gold);font-size:1rem;margin:.3rem 0}
+.rev-avg-c{font-size:.78rem;color:var(--muted)}
+.rev-bars{flex:1;min-width:200px;display:flex;flex-direction:column;gap:.45rem}
+.rev-bar-row{display:flex;align-items:center;gap:.8rem;font-size:.78rem;color:var(--muted)}
+.rev-bar-trk{flex:1;height:6px;background:#eee;border-radius:3px;overflow:hidden}
+.rev-bar-fill{height:100%;background:var(--gold);border-radius:3px}
+.rev-bar-pct{min-width:2.5rem;text-align:right}
+.rev-photos-strip{display:flex;gap:.5rem;flex-wrap:wrap;margin-bottom:1.5rem}
+.rev-photo{width:72px;height:72px;border-radius:4px;overflow:hidden;cursor:pointer;border:2px solid transparent;flex-shrink:0}
+.rev-photo:hover{border-color:var(--gold)}
+.rev-photo img{width:100%;height:100%;object-fit:cover;display:block}
+.write-rev-btn{background:#1a2a4a;color:#fff;border:none;border-radius:50%;width:76px;height:76px;cursor:pointer;font-family:'Inter',sans-serif;font-size:.68rem;font-weight:700;text-align:center;line-height:1.3;flex-shrink:0}
+.write-rev-btn:hover{background:#2a3a5a}
+.rev-tabs{display:flex;border-bottom:2px solid var(--border);margin-bottom:1rem}
+.rev-tab{padding:.6rem 1.2rem;font-size:.85rem;cursor:pointer;color:var(--muted);font-weight:500;border-bottom:2px solid transparent;margin-bottom:-2px}
+.rev-tab.active{color:#000;border-bottom-color:#000;background:#f0f0f0;border-radius:4px 4px 0 0}
+.rev-sort-row{display:flex;justify-content:flex-end;align-items:center;gap:.5rem;margin-bottom:1.5rem;font-size:.82rem;color:var(--muted)}
+.rev-sort-row select{border:1px solid var(--border);border-radius:4px;padding:.3rem .6rem;font-family:'Inter',sans-serif;font-size:.82rem;color:#000;cursor:pointer}
+.rev-grid{columns:4;column-gap:1rem;margin-bottom:3rem}
+.rev-card{break-inside:avoid;border:1px solid var(--border);border-radius:8px;overflow:hidden;margin-bottom:1rem}
+.rev-card-img{width:100%;position:relative;cursor:zoom-in}
+.rev-card-img img{width:100%;display:block;object-fit:cover}
+.rev-photo-ct{position:absolute;top:8px;left:8px;background:rgba(0,0,0,.6);color:#fff;font-size:.7rem;padding:.15rem .4rem;border-radius:3px;font-weight:600}
+.rev-card-body{padding:.9rem}
+.rev-card-stars{color:var(--gold);font-size:.82rem;margin-bottom:.5rem}
+.rev-author-row{display:flex;align-items:center;gap:.5rem;margin-bottom:.5rem}
+.rev-av{width:28px;height:28px;border-radius:50%;background:#e0e0e0;display:flex;align-items:center;justify-content:center;font-size:.7rem;font-weight:700;color:#555;flex-shrink:0;overflow:hidden}
+.rev-av img{width:100%;height:100%;object-fit:cover}
+.rev-name{font-size:.82rem;font-weight:600;color:#000}
+.verified{display:inline-flex;align-items:center;gap:.2rem;font-size:.68rem;color:#2a9d5c;font-weight:500}
+.verified::before{content:'✓';display:inline-block;background:#2a9d5c;color:#fff;border-radius:50%;width:12px;height:12px;font-size:.55rem;text-align:center;line-height:12px;flex-shrink:0}
+.rev-txt{font-size:.82rem;color:var(--dark);line-height:1.55;margin-bottom:.7rem}
+.rev-card-foot{display:flex;align-items:center;justify-content:space-between;font-size:.72rem;color:var(--muted)}
+.helpful-btn{background:none;border:1px solid var(--border);border-radius:3px;padding:.2rem .5rem;cursor:pointer;font-size:.72rem;color:var(--muted);font-family:'Inter',sans-serif}
+.helpful-btn:hover{border-color:#000;color:#000}
+.helpful-note{font-size:.72rem;color:var(--muted);margin-bottom:.4rem}
+
+/* YMAL */
+.ymal{max-width:1300px;margin:0 auto;padding:2rem 2rem 4rem}
+.ymal h2{font-size:1.2rem;font-weight:700;color:#000;margin-bottom:1.5rem}
+.ymal-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.2rem}
+
+/* ── CART SIDEBAR ── */
+.cart-ov{position:fixed;inset:0;background:rgba(0,0,0,.35);z-index:600;display:none}
+.cart-ov.open{display:block}
+.cart-side{position:fixed;right:0;top:0;bottom:0;width:380px;background:#fff;z-index:700;transform:translateX(100%);transition:transform .3s ease;display:flex;flex-direction:column;box-shadow:-4px 0 20px rgba(0,0,0,.1)}
+.cart-side.open{transform:translateX(0)}
+.cart-hd{display:flex;justify-content:space-between;align-items:center;padding:1.2rem 1.5rem;border-bottom:1px solid var(--border)}
+.cart-hd h3{font-size:1rem;font-weight:700}
+.cart-close{background:none;border:none;cursor:pointer;font-size:1.2rem;color:var(--muted)}
+.cart-body{flex:1;overflow-y:auto;padding:1rem 1.5rem}
+.cart-empty{text-align:center;color:var(--muted);padding:3rem 0;font-size:.9rem}
+.ci{display:flex;gap:1rem;padding:.9rem 0;border-bottom:1px solid var(--border)}
+.ci-img{width:64px;height:64px;border-radius:4px;overflow:hidden;background:var(--lg);flex-shrink:0}
+.ci-img img{width:100%;height:100%;object-fit:cover}
+.ci-name{font-size:.82rem;font-weight:500;color:#000;margin-bottom:.3rem;line-height:1.3}
+.ci-price{font-size:.82rem;color:var(--muted)}
+.ci-rm{background:none;border:none;color:var(--muted);cursor:pointer;font-size:.72rem;margin-top:.3rem;display:block;text-decoration:underline}
+.cart-ft{padding:1.2rem 1.5rem;border-top:1px solid var(--border)}
+.cart-total{display:flex;justify-content:space-between;font-size:.95rem;font-weight:600;margin-bottom:1rem}
+.chk-btn{width:100%;padding:.9rem;background:#000;color:#fff;border:none;border-radius:6px;cursor:pointer;font-family:'Inter',sans-serif;font-weight:600;font-size:.9rem}
+.chk-btn:hover{background:#333}
+
+/* ── ACCOUNT MODAL ── */
+.modal-ov{position:fixed;inset:0;background:rgba(0,0,0,.4);z-index:800;display:none;align-items:center;justify-content:center}
+.modal-ov.open{display:flex}
+.modal-box{background:#fff;border-radius:12px;padding:2.5rem;width:400px;max-width:90vw;position:relative;max-height:90vh;overflow-y:auto}
+.modal-x{position:absolute;top:1rem;right:1rem;background:none;border:none;font-size:1.2rem;cursor:pointer;color:var(--muted)}
+.modal-box h2{font-size:1.3rem;font-weight:700;color:#000;margin-bottom:.4rem}
+.modal-box p{font-size:.85rem;color:var(--muted);margin-bottom:1.5rem}
+.m-inp{width:100%;padding:.8rem 1rem;border:1px solid var(--border);border-radius:6px;font-family:'Inter',sans-serif;font-size:.9rem;outline:none;margin-bottom:.8rem;display:block}
+.m-inp:focus{border-color:#000}
+.m-btn{width:100%;padding:.85rem;background:#000;color:#fff;border:none;border-radius:6px;cursor:pointer;font-family:'Inter',sans-serif;font-size:.9rem;font-weight:600;transition:.2s;margin-bottom:.8rem}
+.m-btn:hover{background:#222}
+.m-lnk{text-align:center;font-size:.82rem;color:var(--muted)}
+.m-lnk a{color:#000;text-decoration:underline;cursor:pointer}
+
+/* ── REVIEW MODAL ── */
+.star-picker{display:flex;gap:.3rem;margin-bottom:1rem}
+.star-picker span{font-size:2rem;cursor:pointer;color:#ddd;transition:color .1s;line-height:1}
+.star-picker span.lit{color:var(--gold)}
+.photo-drop{border:2px dashed var(--border);border-radius:8px;padding:1.5rem;text-align:center;cursor:pointer;margin-bottom:1rem;transition:border-color .2s}
+.photo-drop:hover{border-color:#999}
+.photo-drop p{font-size:.82rem;color:var(--muted)}
+.photo-preview{display:flex;gap:.5rem;flex-wrap:wrap;margin-bottom:1rem}
+.photo-preview img{width:64px;height:64px;object-fit:cover;border-radius:4px}
+.rev-submit-btn{width:100%;padding:.85rem;background:#000;color:#fff;border:none;border-radius:6px;cursor:pointer;font-family:'Inter',sans-serif;font-size:.9rem;font-weight:600}
+
+/* ── CHAT WIDGET ── */
+.chat-widget{position:fixed;bottom:1.5rem;right:1.5rem;z-index:900;font-family:'Inter',sans-serif}
+.chat-bubble-btn{width:54px;height:54px;border-radius:50%;background:#000;border:none;cursor:pointer;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 16px rgba(0,0,0,.3);transition:.2s}
+.chat-bubble-btn:hover{background:#222;transform:scale(1.05)}
+.chat-notif{position:absolute;top:-4px;right:-4px;background:#e53935;color:#fff;border-radius:50%;width:18px;height:18px;font-size:.65rem;display:flex;align-items:center;justify-content:center;font-weight:700}
+.chat-panel{position:absolute;bottom:68px;right:0;width:350px;background:#fff;border-radius:16px;box-shadow:0 8px 40px rgba(0,0,0,.2);display:none;flex-direction:column;overflow:hidden;max-height:500px}
+.chat-panel.open{display:flex}
+.chat-panel-hd{background:#000;padding:1.2rem 1.5rem;display:flex;align-items:flex-start;justify-content:space-between}
+.chat-panel-hd-left h4{font-size:1rem;font-weight:700;color:#fff;margin-bottom:.2rem}
+.chat-panel-hd-left p{font-size:.82rem;color:rgba(255,255,255,.7)}
+.chat-hd-close{background:none;border:none;color:rgba(255,255,255,.7);cursor:pointer;font-size:1.2rem;padding:0;line-height:1}
+.chat-msgs{flex:1;overflow-y:auto;padding:1rem;display:flex;flex-direction:column;gap:.75rem;background:#f9f9f9;min-height:200px}
+.chat-msg{max-width:80%}
+.chat-msg.bot{align-self:flex-start}
+.chat-msg.user{align-self:flex-end}
+.chat-bubble{padding:.6rem .9rem;border-radius:12px;font-size:.84rem;line-height:1.45}
+.chat-msg.bot .chat-bubble{background:#fff;border:1px solid var(--border);color:#000;border-radius:4px 12px 12px 12px}
+.chat-msg.user .chat-bubble{background:#000;color:#fff;border-radius:12px 4px 12px 12px}
+.chat-time{font-size:.68rem;color:var(--muted);margin-top:.25rem}
+.chat-msg.user .chat-time{text-align:right}
+.chat-typing{display:flex;gap:.3rem;padding:.6rem .9rem;background:#fff;border:1px solid var(--border);border-radius:4px 12px 12px 12px;align-items:center;width:fit-content}
+.chat-typing span{width:6px;height:6px;background:#ccc;border-radius:50%;animation:typ .8s infinite}
+.chat-typing span:nth-child(2){animation-delay:.2s}
+.chat-typing span:nth-child(3){animation-delay:.4s}
+@keyframes typ{0%,80%,100%{transform:scale(0.8);opacity:.5}40%{transform:scale(1);opacity:1}}
+.chat-inp-row{display:flex;align-items:center;gap:.5rem;padding:.8rem 1rem;border-top:1px solid var(--border);background:#fff}
+.chat-inp{flex:1;border:1px solid var(--border);border-radius:20px;padding:.5rem 1rem;font-family:'Inter',sans-serif;font-size:.85rem;outline:none}
+.chat-inp:focus{border-color:#000}
+.chat-send{background:#000;color:#fff;border:none;border-radius:50%;width:32px;height:32px;cursor:pointer;display:flex;align-items:center;justify-content:center;flex-shrink:0;transition:.2s}
+.chat-send:hover{background:#333}
+
+/* LIGHTBOX */
+.lb{position:fixed;inset:0;background:rgba(0,0,0,.93);z-index:9999;display:flex;align-items:center;justify-content:center;cursor:zoom-out}
+.lb img{max-width:90vw;max-height:90vh;border-radius:4px;object-fit:contain}
+.lb-close{position:absolute;top:1.5rem;right:1.5rem;background:none;border:none;color:#fff;font-size:2rem;cursor:pointer;z-index:2;padding:.3rem}
+
+/* RESPONSIVE */
+@media(max-width:1024px){.pd-layout{grid-template-columns:1fr}.pd-info{position:static}.prod-grid,.ymal-grid{grid-template-columns:repeat(2,1fr)}.rev-grid{columns:2}}
+@media(max-width:768px){.prob-in,.diff-in{grid-template-columns:1fr}.prob-img,.diff-img{display:none}.lvl-grid{grid-template-columns:1fr}.foot-in{grid-template-columns:1fr;gap:2rem}.nav-links{display:none}.cart-side{width:100%}.rev-grid{columns:1}.nl-in{grid-template-columns:1fr}.rev-summary{flex-direction:column;gap:1.5rem}}
+@media(max-width:500px){.prod-grid,.ymal-grid{grid-template-columns:1fr 1fr}}
+
+/* ── FULL IMAGE VIEWER ── */
+.img-viewer{position:fixed;inset:0;background:#1a1a1a;z-index:10000;display:none;flex-direction:row}
+.img-viewer.open{display:flex}
+.img-viewer-main{flex:1;display:flex;align-items:center;justify-content:center;overflow:hidden;position:relative;cursor:crosshair}
+.img-viewer-img-wrap{position:relative;display:flex;align-items:center;justify-content:center;max-width:calc(100% - 0px);max-height:100vh}
+.img-viewer-img-wrap img{max-width:100%;max-height:100vh;object-fit:contain;user-select:none;display:block;pointer-events:none}
+.img-viewer-thumbs{width:72px;background:#111;display:flex;flex-direction:column;gap:4px;padding:8px;overflow-y:auto;flex-shrink:0}
+.img-viewer-thumb{width:56px;height:56px;flex-shrink:0;border-radius:3px;overflow:hidden;cursor:pointer;border:2px solid transparent;transition:border-color .15s}
+.img-viewer-thumb.active{border-color:#fff}
+.img-viewer-thumb img{width:100%;height:100%;object-fit:cover;display:block}
+.img-viewer-close{position:absolute;top:16px;left:16px;background:rgba(255,255,255,.15);border:none;color:#fff;width:40px;height:40px;border-radius:50%;cursor:pointer;font-size:1.2rem;display:flex;align-items:center;justify-content:center;z-index:10;transition:.2s;backdrop-filter:blur(4px)}
+.img-viewer-close:hover{background:rgba(255,255,255,.3)}
+.img-viewer-nav{position:absolute;top:50%;transform:translateY(-50%);background:rgba(255,255,255,.15);border:none;color:#fff;width:44px;height:44px;border-radius:50%;cursor:pointer;font-size:1.3rem;display:flex;align-items:center;justify-content:center;z-index:10;transition:.2s;backdrop-filter:blur(4px)}
+.img-viewer-nav:hover{background:rgba(255,255,255,.3)}
+.img-viewer-prev{left:16px}.img-viewer-next{right:88px}
+.img-viewer-counter{position:absolute;bottom:16px;left:50%;transform:translateX(-50%);color:rgba(255,255,255,.6);font-size:.82rem;font-family:'Inter',sans-serif;z-index:10}
+</style>
+</head>
+<body>
+
+<!-- CART -->
+<div class="cart-ov" id="cartOv" onclick="closeCart()"></div>
+<div class="cart-side" id="cartSide">
+  <div class="cart-hd"><h3>Cart</h3><button class="cart-close" onclick="closeCart()">✕</button></div>
+  <div class="cart-body" id="cartBody"><div class="cart-empty">Your cart is empty.<br><br><small>Have an account? <a href="#" style="color:#000" onclick="openAcct()">Log in</a> to check out faster.</small></div></div>
+  <div class="cart-ft" id="cartFt" style="display:none">
+    <div class="cart-total"><span>Total</span><span id="cartTotal">$0.00</span></div>
+    <button class="chk-btn" onclick="if(typeof whop!=='undefined')whop.track('lead');window.location.href='https://woolcreationpayment.site/'">Check out</button>
+  </div>
+</div>
+
+<!-- ACCOUNT MODAL -->
+<div class="modal-ov" id="acctModal" onclick="if(event.target===this)closeAcct()">
+  <div class="modal-box">
+    <button class="modal-x" onclick="closeAcct()">✕</button>
+    <h2>Log in</h2>
+    <p>Welcome back! Sign in to your account.</p>
+    <input class="m-inp" type="email" placeholder="Email" id="acctEmail">
+    <input class="m-inp" type="password" placeholder="Password">
+    <button class="m-btn" onclick="alert('Login coming soon!')">Log in</button>
+    <div style="text-align:center;font-size:.8rem;color:var(--muted);margin-bottom:.8rem">or</div>
+    <div class="m-lnk"><a onclick="closeAcct();alert('Account creation coming soon!')">Create account</a> &nbsp;·&nbsp; <a onclick="closeAcct();alert('Check your email to reset your password.')">Forgot password?</a></div>
+  </div>
+</div>
+
+<!-- REVIEW MODAL -->
+<div class="modal-ov" id="revModal" onclick="if(event.target===this)closeRevModal()">
+  <div class="modal-box">
+    <button class="modal-x" onclick="closeRevModal()">✕</button>
+    <h2>Write a Review</h2>
+    <p id="revModalProduct" style="font-weight:600;color:#000;margin-bottom:1rem;font-size:.9rem"></p>
+    <label style="font-size:.82rem;font-weight:600;color:#000;display:block;margin-bottom:.4rem">Your Rating *</label>
+    <div class="star-picker" id="starPicker">
+      <span onclick="setStars(1)" onmouseover="hoverStars(1)" onmouseout="resetHover()">★</span>
+      <span onclick="setStars(2)" onmouseover="hoverStars(2)" onmouseout="resetHover()">★</span>
+      <span onclick="setStars(3)" onmouseover="hoverStars(3)" onmouseout="resetHover()">★</span>
+      <span onclick="setStars(4)" onmouseover="hoverStars(4)" onmouseout="resetHover()">★</span>
+      <span onclick="setStars(5)" onmouseover="hoverStars(5)" onmouseout="resetHover()">★</span>
+    </div>
+    <label style="font-size:.82rem;font-weight:600;color:#000;display:block;margin-bottom:.4rem">Your Name *</label>
+    <input class="m-inp" type="text" placeholder="Your name" id="revName" style="margin-bottom:1rem">
+    <label style="font-size:.82rem;font-weight:600;color:#000;display:block;margin-bottom:.4rem">Your Review *</label>
+    <textarea class="m-inp" placeholder="Share your experience with this pattern..." id="revText" rows="4" style="resize:vertical;margin-bottom:1rem"></textarea>
+    <label style="font-size:.82rem;font-weight:600;color:#000;display:block;margin-bottom:.4rem">Add Photos (optional)</label>
+    <div class="photo-drop" onclick="document.getElementById('photoUpload').click()">
+      <p>📷 Click to upload photos of your finished project</p>
+      <p style="font-size:.72rem;margin-top:.3rem">JPG, PNG, GIF up to 10MB</p>
+    </div>
+    <input type="file" id="photoUpload" accept="image/*" multiple style="display:none" onchange="previewPhotos(this)">
+    <div class="photo-preview" id="photoPreview"></div>
+    <button class="rev-submit-btn" onclick="submitReview()">Submit Review</button>
+  </div>
+</div>
+
+<!-- CHAT WIDGET -->
+<div class="chat-widget" id="chatWidget">
+  <div class="chat-panel" id="chatPanel">
+    <div class="chat-panel-hd">
+      <div class="chat-panel-hd-left">
+        <h4>💬 Chat with us</h4>
+        <p>Hi! We're happy to help. We reply within minutes.</p>
+      </div>
+      <button class="chat-hd-close" onclick="toggleChat()">✕</button>
+    </div>
+    <div class="chat-msgs" id="chatMsgs">
+      <div class="chat-msg bot"><div class="chat-bubble">👋 Hi there! Welcome to Wool Creations. How can I help you today?</div><div class="chat-time">Just now</div></div>
+    </div>
+    <div class="chat-inp-row">
+      <input class="chat-inp" id="chatInp" placeholder="Type a message..." onkeydown="if(event.key==='Enter')sendChat()">
+      <button class="chat-send" onclick="sendChat()">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+      </button>
+    </div>
+  </div>
+  <button class="chat-bubble-btn" onclick="toggleChat()" id="chatBtn">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+    <span class="chat-notif">1</span>
+  </button>
+</div>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-in">
+    <ul class="nav-links">
+      <li><a onclick="showPage('home');scrollTo(0,0)">Home</a></li>
+      <li><a onclick="showPage('all')">All Patterns</a></li>
+      <li><a onclick="showPage('contact')">Contact</a></li>
+      <li><a onclick="showPage('guide')">Downloading Guide</a></li>
+    </ul>
+    <span class="nav-logo" onclick="showPage('home');scrollTo(0,0)">Wool Creations</span>
+    <div class="nav-right">
+      <button class="nav-icon" onclick="openAcct()"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg></button>
+      <button class="nav-icon" onclick="if(typeof whop!=='undefined')whop.track('lead');window.location.href='https://woolcreationpayment.site/'" style="position:relative">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+        <span class="cart-badge" id="cartBadge">0</span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- ===== HOME PAGE ===== -->
+<div id="home-page" class="page active">
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-content">
+    <h1>Stop Frogging. Start Finishing.</h1>
+    <p>Clear, step-by-step crochet patterns — so you spend less time confused and more time creating things you're proud of.</p>
+    <button class="hero-btn" onclick="showPage('all')">Get My First Pattern</button>
+  </div>
+</section>
+
+<div class="ticker"><div class="ticker-in">
+  <span class="tick-item"><span class="tick-stars">★★★★★</span> "Finally a pattern I could actually follow." — Marie L. <span style="color:rgba(255,255,255,.3);margin-left:1rem">✦</span></span>
+  <span class="tick-item"><span class="tick-stars">★★★★★</span> "Downloaded, printed, done in a weekend." — Sophie R. <span style="color:rgba(255,255,255,.3);margin-left:1rem">✦</span></span>
+  <span class="tick-item"><span class="tick-stars">★★★★★</span> "Worth every cent — crystal clear instructions." — Claire M. <span style="color:rgba(255,255,255,.3);margin-left:1rem">✦</span></span>
+  <span class="tick-item"><span class="tick-stars">★★★★★</span> "Finished my first cardigan thanks to this shop!" — Amélie T. <span style="color:rgba(255,255,255,.3);margin-left:1rem">✦</span></span>
+  <span class="tick-item"><span class="tick-stars">★★★★★</span> "The video links made all the difference." — Isabelle D. <span style="color:rgba(255,255,255,.3);margin-left:1rem">✦</span></span>
+  <span class="tick-item"><span class="tick-stars">★★★★★</span> "Finally a pattern I could actually follow." — Marie L. <span style="color:rgba(255,255,255,.3);margin-left:1rem">✦</span></span>
+  <span class="tick-item"><span class="tick-stars">★★★★★</span> "Downloaded, printed, done in a weekend." — Sophie R. <span style="color:rgba(255,255,255,.3);margin-left:1rem">✦</span></span>
+  <span class="tick-item"><span class="tick-stars">★★★★★</span> "Worth every cent — crystal clear instructions." — Claire M. <span style="color:rgba(255,255,255,.3);margin-left:1rem">✦</span></span>
+  <span class="tick-item"><span class="tick-stars">★★★★★</span> "Finished my first cardigan thanks to this shop!" — Amélie T. <span style="color:rgba(255,255,255,.3);margin-left:1rem">✦</span></span>
+  <span class="tick-item"><span class="tick-stars">★★★★★</span> "The video links made all the difference." — Isabelle D. <span style="color:rgba(255,255,255,.3);margin-left:1rem">✦</span></span>
+</div></div>
+
+<section class="prob-sec"><div class="prob-in">
+  <div>
+    <p class="prob-lbl">The Reality</p>
+    <h2 class="prob-ttl">Most crochet patterns are a nightmare.</h2>
+    <p class="prob-txt">Confusing abbreviations. Missing steps. No photos. You rip it all out, start over, and still end up stuck. That's not a skill problem — that's a bad pattern problem.</p>
+    <ul class="prob-list">
+      <li>😤 Vague instructions that leave you guessing mid-row</li>
+      <li>📄 No photos or diagrams — just a wall of text</li>
+      <li>🔇 No support when you get stuck at 11pm</li>
+      <li>🔄 Hours wasted frogging and starting over</li>
+    </ul>
+  </div>
+  <div class="prob-img"><img src="https://cdn.shopify.com/s/files/1/0656/3574/5854/files/pexels-arina-krasnikova-5709788.jpg?v=1772408087" alt="" onerror="this.parentElement.style.background='#3a3a3a'"></div>
+</div></section>
+
+<section class="diff-sec"><div class="diff-in">
+  <div class="diff-img"><img src="https://cdn.shopify.com/s/files/1/0656/3574/5854/files/pexels-arina-krasnikova-5709765.jpg?v=1772408506" alt="" onerror="this.parentElement.style.background='#e8e0d0'"></div>
+  <div>
+    <p class="diff-lbl">Our Difference</p>
+    <h2 class="diff-ttl">Our patterns are built differently.</h2>
+    <p style="color:var(--muted);margin-bottom:1rem;font-size:.93rem">Every pattern includes photo walkthroughs, stitch-by-stitch instructions, video links for tricky parts, and sizes XS–XL.</p>
+    <div class="perks">
+      <div class="perk"><span class="perk-ico">💡</span><div><h3>Zero Confusion</h3><p>Every stitch explained with photos and diagrams. No guessing. Clear instructions from first stitch to last.</p></div></div>
+      <div class="perk"><span class="perk-ico">⚡</span><div><h3>Instant Access</h3><p>Buy it, get it immediately in your inbox. No waiting, no shipping. Your PDF is ready the second you check out.</p></div></div>
+      <div class="perk"><span class="perk-ico">🙋</span><div><h3>Real Support</h3><p>Stuck on a stitch? Message us — we reply fast, 7 days a week. We won't leave you hanging at midnight.</p></div></div>
+    </div>
+  </div>
+</div></section>
+
+<section class="lvl-sec">
+  <h2>Not sure where to start?<br>We've got you.</h2>
+  <p class="sub">Every pattern is labeled so you always know exactly what you're getting into before you buy.</p>
+  <div class="lvl-grid">
+    <div class="lvl-card g"><div class="lvl-dot"></div><span class="lvl-n">1</span><h3>Beginner</h3><p>Never held a hook before? Start here. We walk you through every stitch from scratch — zero assumed knowledge.</p><button class="lvl-btn" onclick="showPage('all')">START HERE</button></div>
+    <div class="lvl-card y"><div class="lvl-dot"></div><span class="lvl-n">2</span><h3>Easy</h3><p>You know the basics. Time to level up. Tackle more interesting shapes, textures, and garment construction.</p><button class="lvl-btn" onclick="showPage('all')">LEVEL UP</button></div>
+    <div class="lvl-card r"><div class="lvl-dot"></div><span class="lvl-n">3</span><h3>Advanced</h3><p>Complex shaping, colorwork, and intricate stitch patterns. For the crocheter ready to make things that turn heads.</p><button class="lvl-btn" onclick="showPage('all')">MASTER CRAFT</button></div>
+  </div>
+</section>
+
+<div class="sec">
+  <div class="prod-hdr"><div><p class="sh-lbl">Shop Patterns</p><h2 class="sh-ttl">Our Best Sellers</h2></div><a class="view-all" onclick="showPage('all')">View all →</a></div>
+  <div class="prod-grid" id="homeGrid"></div>
+</div>
+
+<div class="nl-sec" id="nl-anchor"><div class="nl-in">
+  <div><p class="nl-lbl">JOIN THE CLUB</p><h2 class="nl-ttl">Get a Free Pattern Every Week. No Catch.</h2><p class="nl-sub">Join 1,000+ crocheters who get a brand new free pattern in their inbox every week. No spam. Just good patterns, every Monday morning.</p></div>
+  <div class="nl-right">
+    <input class="nl-inp" type="email" placeholder="Your email address" id="nlEmail">
+    <button class="nl-form-btn" onclick="subscribe()">🧡 Claim My Free Pattern</button>
+    <p class="nl-note">No spam. Unsubscribe anytime. Your inbox, your rules.</p>
+  </div>
+</div></div>
+
+<footer><div class="foot-in">
+  <div class="foot-brand"><span class="foot-logo" onclick="showPage('home');scrollTo(0,0)">Wool Creations</span><p>Clear, step-by-step crochet patterns so you spend less time frustrated and more time making things you love.</p></div>
+  <div><h5>Shop</h5><ul class="foot-links"><li><a onclick="showPage('all')">All Patterns</a></li><li><a onclick="showPage('all')">Beginner Patterns</a></li><li><a onclick="showPage('all')">Advanced Patterns</a></li></ul></div>
+  <div><h5>Help</h5><ul class="foot-links"><li><a onclick="toggleChat()">Chat with Us</a></li><li><a onclick="alert('PDF available immediately after purchase.')">Downloading Guide</a></li><li><a>Refund Policy</a></li><li><a>Privacy Policy</a></li></ul></div>
+</div><div class="foot-btm"><span>© 2025 Wool Creations. All rights reserved.</span><span>Made with 🧶 and a lot of yarn</span></div></footer>
+</div>
+
+<!-- ===== ALL PRODUCTS PAGE ===== -->
+<div id="all-page" class="page">
+  <div class="all-in">
+    <a class="back-link" onclick="showPage('home')">← Home</a>
+    <h1 class="pg-ttl">All Patterns</h1>
+    <p class="pg-sub">11 patterns · All $2.47 · Instant PDF download</p>
+    <div class="prod-grid" id="allGrid"></div>
+  </div>
+</div>
+
+<!-- ===== PRODUCT DETAIL PAGE ===== -->
+<div id="product-page" class="page">
+  <div class="pd-wrap">
+    <div class="pd-crumb"><a onclick="goBack()">Home</a> / <a onclick="showPage('all')">All Patterns</a> / <span id="pdCrumb" style="color:#000"></span></div>
+    <div class="pd-layout">
+      <div class="pd-gallery" id="pdGallery"></div>
+      <div class="pd-info" id="pdInfo">
+        <h1 class="pd-ttl" id="pdTitle"></h1>
+        <div class="pd-star-row"><span class="pd-stars" id="pdStars"></span><span class="pd-rev-ct" id="pdRevCt" onclick="document.querySelector('.rev-wrap').scrollIntoView({behavior:'smooth'})"></span></div>
+        <div class="pd-price" id="pdPrice"></div>
+        <button class="pd-add" id="pdAddBtn">Shop now</button>
+        <p class="pd-hl" id="pdHL"></p>
+        <div id="pdRightContent"></div>
+      </div>
+    </div>
+  </div>
+  <div class="rev-wrap">
+    <div class="rev-summary" id="revSummary"></div>
+    <div class="rev-photos-strip" id="revPhotosStrip"></div>
+    <div style="display:flex;gap:1rem;align-items:center;margin-bottom:1.5rem;flex-wrap:wrap">
+      <div class="rev-tabs" style="margin-bottom:0;flex:1">
+        <div class="rev-tab active" onclick="setTab(this)">Product reviews</div>
+        <div class="rev-tab" onclick="setTab(this)">Shop reviews</div>
+      </div>
+      <button class="write-rev-btn" onclick="openRevModal()">WRITE<br>A<br>REVIEW</button>
+    </div>
+    <div class="rev-sort-row">Sort by <select><option>Recommended</option><option>Newest first</option><option>Highest rating</option><option>Lowest rating</option></select></div>
+    <div class="rev-grid" id="revGrid"></div>
+  </div>
+  <div class="ymal"><h2>You may also like</h2><div class="ymal-grid" id="ymalGrid"></div></div>
+</div>
+
+<div class="sticky-bar" id="stickyBar">
+  <div class="sticky-info"><div class="sticky-img"><img id="stickyImg" src="" alt=""></div><div><div class="sticky-name" id="stickyName"></div><div class="sticky-price" id="stickyPrice"></div></div></div>
+  <button class="sticky-btn" id="stickyBtn" onclick="shopNow(currentProduct)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>Shop now · $2.47</button>
+</div>
+
+
+<!-- ===== CONTACT PAGE ===== -->
+<div id="contact-page" class="page">
+  <div style="max-width:700px;margin:0 auto;padding:5rem 2rem">
+    <a class="back-link" onclick="showPage('home')" style="display:inline-flex;align-items:center;gap:.4rem;color:#888;font-size:.84rem;cursor:pointer;margin-bottom:2rem;text-decoration:none">← Home</a>
+    <h1 style="font-size:2rem;font-weight:700;color:#000;margin-bottom:.5rem">Contact Us</h1>
+    <p style="color:#888;margin-bottom:3rem">Have a question? We're happy to help. Fill out the form below and we'll get back to you as soon as possible.</p>
+    
+    <div style="background:#f9f9f9;border-radius:12px;padding:2rem;margin-bottom:2rem">
+      <div style="display:flex;align-items:center;gap:1rem;margin-bottom:1.5rem;padding-bottom:1.5rem;border-bottom:1px solid #e8e8e8">
+        <div style="width:48px;height:48px;background:#000;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+        </div>
+        <div>
+          <div style="font-weight:600;font-size:.9rem;color:#000">Live Chat</div>
+          <div style="font-size:.82rem;color:#888">Chat with us in real time — click the chat bubble at the bottom right</div>
+        </div>
+        <button onclick="toggleChat()" style="margin-left:auto;background:#000;color:#fff;border:none;padding:.5rem 1rem;border-radius:6px;cursor:pointer;font-size:.82rem;font-family:'Inter',sans-serif;font-weight:600">Chat Now</button>
+      </div>
+      <div style="display:flex;align-items:center;gap:1rem">
+        <div style="width:48px;height:48px;background:#000;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        </div>
+        <div>
+          <div style="font-weight:600;font-size:.9rem;color:#000">Email</div>
+          <div style="font-size:.82rem;color:#888">hello@woolcreations.shop</div>
+        </div>
+      </div>
+    </div>
+
+    <form onsubmit="submitContact(event)" style="display:flex;flex-direction:column;gap:1rem">
+      <div>
+        <label style="display:block;font-size:.82rem;font-weight:600;color:#000;margin-bottom:.4rem">Your Name *</label>
+        <input id="cName" type="text" placeholder="Your full name" style="width:100%;padding:.8rem 1rem;border:1px solid #e8e8e8;border-radius:6px;font-family:'Inter',sans-serif;font-size:.9rem;outline:none" required>
+      </div>
+      <div>
+        <label style="display:block;font-size:.82rem;font-weight:600;color:#000;margin-bottom:.4rem">Email Address *</label>
+        <input id="cEmail" type="email" placeholder="your@email.com" style="width:100%;padding:.8rem 1rem;border:1px solid #e8e8e8;border-radius:6px;font-family:'Inter',sans-serif;font-size:.9rem;outline:none" required>
+      </div>
+      <div>
+        <label style="display:block;font-size:.82rem;font-weight:600;color:#000;margin-bottom:.4rem">Order Number (optional)</label>
+        <input id="cOrder" type="text" placeholder="e.g. #1234" style="width:100%;padding:.8rem 1rem;border:1px solid #e8e8e8;border-radius:6px;font-family:'Inter',sans-serif;font-size:.9rem;outline:none">
+      </div>
+      <div>
+        <label style="display:block;font-size:.82rem;font-weight:600;color:#000;margin-bottom:.4rem">Message *</label>
+        <textarea id="cMsg" rows="5" placeholder="How can we help you?" style="width:100%;padding:.8rem 1rem;border:1px solid #e8e8e8;border-radius:6px;font-family:'Inter',sans-serif;font-size:.9rem;outline:none;resize:vertical" required></textarea>
+      </div>
+      <button type="submit" style="background:#000;color:#fff;border:none;padding:1rem;border-radius:6px;cursor:pointer;font-family:'Inter',sans-serif;font-size:.95rem;font-weight:600;transition:.2s">Send Message</button>
+    </form>
+  </div>
+</div>
+
+<!-- ===== DOWNLOADING GUIDE PAGE ===== -->
+<div id="guide-page" class="page">
+  <div style="max-width:800px;margin:0 auto;padding:5rem 2rem">
+    <a class="back-link" onclick="showPage('home')" style="display:inline-flex;align-items:center;gap:.4rem;color:#888;font-size:.84rem;cursor:pointer;margin-bottom:2rem;text-decoration:none">← Home</a>
+    <div style="text-align:center;margin-bottom:3rem">
+      <div style="font-size:2.5rem;margin-bottom:1rem">🧶</div>
+      <h1 style="font-size:2rem;font-weight:700;color:#000;margin-bottom:.5rem">How to Download <em style="font-style:italic">Your Patterns</em></h1>
+      <p style="color:#888;font-size:.95rem">Access your digital purchases in just a few clicks</p>
+    </div>
+
+    <div style="background:#f5f5f5;border-radius:12px;padding:1.5rem;margin-bottom:1.5rem;display:flex;align-items:flex-start;gap:1rem">
+      <div style="width:36px;height:36px;background:#000;color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:.9rem;flex-shrink:0">📦</div>
+      <p style="font-size:.9rem;color:#555;line-height:1.7">After every purchase, your patterns are delivered <strong style="color:#000">two ways</strong> — instantly on the thank you page, and via email so you always have a link handy. Follow whichever method works best for you.</p>
+    </div>
+
+    <div style="display:flex;flex-direction:column;gap:1.5rem;margin-bottom:3rem">
+      <!-- Method 1 -->
+      <div style="border:1px solid #e8e8e8;border-radius:12px;overflow:hidden">
+        <div style="background:#000;padding:1.2rem 1.5rem;display:flex;align-items:center;gap:1rem">
+          <div style="width:32px;height:32px;background:#fff;color:#000;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:.9rem;flex-shrink:0">1</div>
+          <div>
+            <div style="font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.5);margin-bottom:.1rem">Method One</div>
+            <div style="font-size:1rem;font-weight:700;color:#fff">On the Thank You Page</div>
+          </div>
+        </div>
+        <div style="padding:1.5rem">
+          <p style="font-size:.88rem;color:#555;margin-bottom:1.2rem;line-height:1.7">Right after completing your order, you'll land on a confirmation page. Look for the <strong style="color:#000">Access Downloads</strong> button and click it to download your pattern files right away.</p>
+          <div style="background:#f9f9f9;border-radius:8px;padding:1.2rem;border:1px solid #e8e8e8">
+            <p style="font-size:.78rem;font-weight:700;color:#000;margin-bottom:.8rem">🎉 Thank you for your order!</p>
+            <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:.6rem;padding:.6rem .8rem;background:#fff;border-radius:6px;border:1px solid #e8e8e8">
+              <span style="font-size:.78rem;color:#555">🧶 Your Pattern (PDF)</span>
+              <button style="background:#000;color:#fff;border:none;padding:.3rem .8rem;border-radius:4px;font-size:.72rem;cursor:pointer;font-family:'Inter',sans-serif;font-weight:600">⬇ Access Downloads</button>
+            </div>
+          </div>
+          <div style="display:flex;align-items:flex-start;gap:.8rem;margin-top:1rem;padding:.8rem;background:#fffbeb;border-radius:6px;border:1px solid #fde68a">
+            <span style="font-size:1rem;flex-shrink:0">💡</span>
+            <p style="font-size:.8rem;color:#555;line-height:1.6">Closed the page before downloading? No problem — use the email method below to get your files anytime.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Method 2 -->
+      <div style="border:1px solid #e8e8e8;border-radius:12px;overflow:hidden">
+        <div style="background:#000;padding:1.2rem 1.5rem;display:flex;align-items:center;gap:1rem">
+          <div style="width:32px;height:32px;background:#fff;color:#000;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:.9rem;flex-shrink:0">2</div>
+          <div>
+            <div style="font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.5);margin-bottom:.1rem">Method Two</div>
+            <div style="font-size:1rem;font-weight:700;color:#fff">Via Email Link</div>
+          </div>
+        </div>
+        <div style="padding:1.5rem">
+          <p style="font-size:.88rem;color:#555;margin-bottom:1.2rem;line-height:1.7">A download link is sent to your email automatically after purchase. Find the email from Wool Creations in your inbox and click <strong style="color:#000">View Your Downloads</strong>.</p>
+          <div style="background:#f9f9f9;border-radius:8px;padding:1.2rem;border:1px solid #e8e8e8;font-size:.78rem">
+            <div style="display:grid;grid-template-columns:80px 1fr;gap:.3rem .8rem;color:#555;margin-bottom:1rem">
+              <span style="color:#888">From</span><span>hello@woolcreations.shop</span>
+              <span style="color:#888">To</span><span>you@email.com</span>
+              <span style="color:#888">Sub</span><span style="color:#000;font-weight:600">Your Wool Creations patterns are ready 🧶</span>
+            </div>
+            <div style="text-align:center;padding:1rem;background:#fff;border-radius:6px;border:1px solid #e8e8e8">
+              <p style="font-size:.82rem;color:#555;margin-bottom:.8rem">Thank you for your purchase! Your digital patterns are ready.</p>
+              <button style="background:#000;color:#fff;border:none;padding:.6rem 1.5rem;border-radius:6px;font-size:.82rem;cursor:pointer;font-family:'Inter',sans-serif;font-weight:600">View Your Downloads →</button>
+            </div>
+          </div>
+          <div style="display:flex;align-items:flex-start;gap:.8rem;margin-top:1rem;padding:.8rem;background:#eff6ff;border-radius:6px;border:1px solid #bfdbfe">
+            <span style="font-size:1rem;flex-shrink:0">📬</span>
+            <p style="font-size:.8rem;color:#555;line-height:1.6">Can't find it? Check your <strong style="color:#000">spam or junk folder</strong>. Also make sure you entered the correct email address at checkout.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div style="text-align:center;padding:2rem;background:#f9f9f9;border-radius:12px;margin-bottom:1.5rem">
+      <div style="font-size:1.5rem;margin-bottom:.5rem">✨</div>
+      <h2 style="font-size:1.2rem;font-weight:700;color:#000;margin-bottom:.4rem">All set — happy crocheting!</h2>
+      <p style="font-size:.88rem;color:#888">You've successfully accessed your digital pattern. Thank you for being part of the Wool Creations community!</p>
+    </div>
+
+    <div style="text-align:center;padding:1.5rem;border:1px solid #e8e8e8;border-radius:12px">
+      <h3 style="font-size:1rem;font-weight:700;color:#000;margin-bottom:.4rem">🛠 Need help?</h3>
+      <p style="font-size:.88rem;color:#888;margin-bottom:1rem">Having trouble downloading or can't find your email? We'll get it sorted quickly.</p>
+      <button onclick="showPage('contact')" style="background:#000;color:#fff;border:none;padding:.7rem 1.8rem;border-radius:6px;cursor:pointer;font-family:'Inter',sans-serif;font-weight:600;font-size:.88rem">Contact Us</button>
+    </div>
+  </div>
+</div>
+
+<script>
+// ── ALL 11 PRODUCTS with corrected Etsy images ──
+const PRODUCTS = [
+ {id:1,name:"Beginner Friendly Crochet Blanket Pattern",price:2.47,badge:"Beginner",rating:4.8,rc:23,
+  images:["https://i.etsystatic.com/66651392/r/il/6be695/8190457642/il_794xN.8190457642_d0vr.jpg","https://i.etsystatic.com/66651392/r/il/6be695/8190457642/il_794xN.8190457642_d0vr.jpg","https://i.etsystatic.com/66651392/r/il/6be695/8190457642/il_794xN.8190457642_d0vr.jpg","https://i.etsystatic.com/66651392/r/il/6be695/8190457642/il_794xN.8190457642_d0vr.jpg","https://i.etsystatic.com/66651392/r/il/6be695/8190457642/il_794xN.8190457642_d0vr.jpg","https://i.etsystatic.com/66651392/r/il/6be695/8190457642/il_794xN.8190457642_d0vr.jpg","https://i.etsystatic.com/66651392/r/il/6be695/8190457642/il_794xN.8190457642_d0vr.jpg"],
+  hl:"Simple Stitch. Stunning Result. 🧶✨",
+  desc:`<p>Beginner friendly moss-stitch baby blanket pattern!</p><p>This pattern works up so fast and sells quick!</p><p>Perfect 30×30 inches — the ideal baby blanket size for gifting and selling. 🍼✨</p><hr><p><strong>WHAT YOU'LL NEED:</strong></p><ul><li>5mm crochet hook</li><li>Approximately 200g DK or worsted weight yarn</li><li>Yarn needle for weaving in ends</li></ul><hr><p><strong>PATTERN DETAILS:</strong></p><p>Skill Level: Beginner · Stitch: Moss stitch · Finished Size: 30×30 inches · Language: English · Format: PDF digital download</p><hr><p>This is a pattern only. No physical item will be sent. Upon purchase, a pdf document of this pattern will be available for download.</p>`,
+  reviews:[
+    {i:"SL",n:"Sarah L.",v:true,s:5,t:"Absolutely love this pattern! So clear and easy to follow. Finished it in a weekend.",h:2,d:"Mar 5, 2026",img:"https://i.etsystatic.com/66651392/r/il/6be695/8190457642/il_794xN.8190457642_d0vr.jpg"},
+    {i:"MT",n:"Marie T.",v:true,s:5,t:"Finally a pattern I could actually follow. Worth every penny!",h:1,d:"Feb 28, 2026",img:"https://i.etsystatic.com/66651392/r/il/6be695/8190457642/il_794xN.8190457642_d0vr.jpg"},
+    {i:"JD",n:"Jessica D.",v:true,s:5,t:"Crystal clear instructions. The photos at each step make it impossible to get lost.",h:0,d:"Mar 1, 2026",img:"https://i.etsystatic.com/66651392/r/il/6be695/8190457642/il_794xN.8190457642_d0vr.jpg"},
+    {i:"AK",n:"Anna K.",v:true,s:5,t:"Downloaded, printed, done in a weekend. This is my 4th purchase and every one has been perfect.",h:3,d:"Feb 20, 2026",img:"https://i.etsystatic.com/66651392/r/il/6be695/8190457642/il_794xN.8190457642_d0vr.jpg"}
+  ]},
+ {id:2,name:"CLAS TOP — Granny Square Crochet Top Pattern",price:2.47,badge:"Popular",rating:4.7,rc:200,
+  images:["https://i.etsystatic.com/40139764/r/il/a1cc35/6447421397/il_794xN.6447421397_t777.jpg","https://i.etsystatic.com/40139764/r/il/a1cc35/6447421397/il_794xN.6447421397_t777.jpg","https://i.etsystatic.com/40139764/r/il/a1cc35/6447421397/il_794xN.6447421397_t777.jpg","https://i.etsystatic.com/40139764/r/il/a1cc35/6447421397/il_794xN.6447421397_t777.jpg","https://i.etsystatic.com/40139764/r/il/a1cc35/6447421397/il_794xN.6447421397_t777.jpg","https://i.etsystatic.com/40139764/r/il/a1cc35/6447421397/il_794xN.6447421397_t777.jpg","https://i.etsystatic.com/40139764/r/il/a1cc35/6447421397/il_794xN.6447421397_t777.jpg"],
+  hl:"The Top The Crochet World Has Been Asking About. 🌸",
+  desc:`<p>You've seen it in craft groups.</p>
+<p>You've saved it on Pinterest.</p>
+<p>You've watched others make it and thought — I want that.</p>
+<p><strong>Now it's your turn.</strong></p>
+<p>The Clas Top is the original granny square crochet top that took the handmade fashion world by storm — boho, beautiful, and completely one of a kind every time it's made.</p>
+<p>This isn't just a pattern. It's a wearable piece of art that you made yourself. 🌸</p>
+<hr>
+<p><strong>WHY YOU'LL LOVE MAKING THIS:</strong></p>
+<p>🌸 Make the top the whole crochet community has been requesting — finally yours to make at home</p>
+<p>✨ Feel the pride of wearing something completely handmade and one of a kind in YOUR colors, your yarn, your vision</p>
+<p>🎬 Never feel lost — step-by-step photos, diagrams, AND video tutorial links guide you through every stage</p>
+<p>🧶 Make the granny squares, assemble them, finish the top — the full process explained from start to finish</p>
+<p>👗 One size fits all loose comfortable fit — with sizing guidance included so you can size up or down confidently</p>
+<p>🎨 Complete creative freedom — choose any colors and yarn you love to make it completely your own</p>
+<hr>
+<p><strong>WHAT'S INCLUDED IN YOUR INSTANT DOWNLOAD:</strong></p>
+<p>✓ Full PDF pattern — instant access after purchase</p>
+<p>✓ Step-by-step written instructions</p>
+<p>✓ Detailed photos throughout</p>
+<p>✓ Diagrams for visual learners</p>
+<p>✓ Video tutorial links for extra support</p>
+<p>✓ Granny square construction guide</p>
+<p>✓ Assembly instructions</p>
+<p>✓ Finishing techniques</p>
+<p>✓ Yarn type and quantity guidance</p>
+<p>✓ Sizing information for adjusting fit</p>
+<hr>
+<p><strong>PATTERN DETAILS:</strong></p>
+<p><strong>Skill Level:</strong> Intermediate / Advanced</p>
+<p><strong>Fit:</strong> One size fits all — loose, comfortable, relaxed. Sizing guidance included for sizing up or down</p>
+<p><strong>Format:</strong> PDF digital download</p>
+<p><strong>Language:</strong> Written instructions with photos and diagrams</p>
+<p><strong>Support:</strong> Video tutorial links included in pattern</p>
+<hr>
+<p>The Clas Top is waiting for you.</p>
+<p>Download instantly and start making the top the crochet world fell in love with.</p>
+<p>Your version. Your colors. Your style. 🌸</p>
+<p>Add to Cart Now & Start Crocheting Today!</p>`,
+  reviews:[
+    {i:"S",n:"Simone",v:true,s:5,t:"Tolle Anleitung, habe um die Mitte noch eine Kordel eingezogen und eine passende Tasche dazu gemacht.",h:1,d:"Sep 23, 2025",img:"https://i.etsystatic.com/40139764/r/il/a1cc35/6447421397/il_794xN.6447421397_t777.jpg"},
+    {i:"E",n:"Emma",v:true,s:5,t:"Beautiful pattern! The result is stunning.",h:2,d:"Aug 14, 2025",img:"https://i.etsystatic.com/40139764/r/il/a1cc35/6447421397/il_794xN.6447421397_t777.jpg"},
+    {i:"YR",n:"Yesenia Reyes",v:true,s:5,t:"The pattern was clear and the video links helped a lot.",h:0,d:"Jun 1, 2025",img:"https://i.etsystatic.com/40139764/r/il/a1cc35/6447421397/il_794xN.6447421397_t777.jpg"}
+  ]},
+ {id:3,name:"Coastal Lace Crochet Top Pattern 🌊",price:2.47,oldPrice:5.66,sale:true,badge:"Sale",rating:4.5,rc:63,
+  images:["https://i.etsystatic.com/38959913/r/il/8d0110/7147536845/il_794xN.7147536845_oqnk.jpg","https://i.etsystatic.com/38959913/r/il/8d0110/7147536845/il_794xN.7147536845_oqnk.jpg","https://i.etsystatic.com/38959913/r/il/8d0110/7147536845/il_794xN.7147536845_oqnk.jpg","https://i.etsystatic.com/38959913/r/il/8d0110/7147536845/il_794xN.7147536845_oqnk.jpg","https://i.etsystatic.com/38959913/r/il/8d0110/7147536845/il_794xN.7147536845_oqnk.jpg"],
+  hl:"Breezy. Lacy. Beach-Ready. 🌊",
+  desc:`<p>A breezy, lacy crochet top pattern inspired by coastal summer vibes.</p><p>Features an openwork lace stitch that creates beautiful texture and drape. Perfect for beach days and warm-weather wear.</p><hr><p><strong>PATTERN DETAILS:</strong></p><p>Skill Level: Intermediate · Sizes: XS–XL · Language: English · Format: PDF digital download</p><hr><p>This is a pattern only. No physical item will be sent.</p>`,
+  reviews:[
+    {i:"CL",n:"Coastal Lover",v:true,s:5,t:"Love this top! The lace is beautiful and the pattern is easy to follow.",h:3,d:"Jul 10, 2026",img:"https://i.etsystatic.com/38959913/r/il/8d0110/7147536845/il_794xN.7147536845_oqnk.jpg"}
+  ]},
+ {id:4,name:"Coastal Lace Crochet Top Pattern 🌊",price:2.47,badge:null,rating:4.5,rc:63,
+  images:["https://i.etsystatic.com/38959913/r/il/8d0110/7147536845/il_794xN.7147536845_oqnk.jpg","https://i.etsystatic.com/38959913/r/il/8d0110/7147536845/il_794xN.7147536845_oqnk.jpg","https://i.etsystatic.com/38959913/r/il/8d0110/7147536845/il_794xN.7147536845_oqnk.jpg","https://i.etsystatic.com/38959913/r/il/8d0110/7147536845/il_794xN.7147536845_oqnk.jpg","https://i.etsystatic.com/38959913/r/il/8d0110/7147536845/il_794xN.7147536845_oqnk.jpg"],
+  hl:"Coastal Style. Easy Pattern. 🌊",
+  desc:`<p>Alternative edition of the Coastal Lace Crochet Top. Same beautiful lace pattern with slightly different finishing details. Includes all sizes XS–XL.</p><hr><p>This is a pattern only. No physical item will be sent.</p>`,
+  reviews:[
+    {i:"CL",n:"Coastal Lover",v:true,s:5,t:"Love this top! The lace is beautiful and the pattern is easy to follow.",h:3,d:"Jul 10, 2026",img:"https://i.etsystatic.com/38959913/r/il/8d0110/7147536845/il_794xN.7147536845_oqnk.jpg"}
+  ]},
+ {id:5,name:"Crochet Easter Bunny | Low-Sew Pattern",price:2.47,badge:"New",rating:4.7,rc:17,
+  images:["https://i.etsystatic.com/13118724/r/il/4459ab/7772414267/il_794xN.7772414267_hu0a.jpg","https://i.etsystatic.com/13118724/r/il/4459ab/7772414267/il_794xN.7772414267_hu0a.jpg","https://i.etsystatic.com/13118724/r/il/4459ab/7772414267/il_794xN.7772414267_hu0a.jpg","https://i.etsystatic.com/13118724/r/il/4459ab/7772414267/il_794xN.7772414267_hu0a.jpg","https://i.etsystatic.com/13118724/r/il/4459ab/7772414267/il_794xN.7772414267_hu0a.jpg","https://i.etsystatic.com/13118724/r/il/4459ab/7772414267/il_794xN.7772414267_hu0a.jpg","https://i.etsystatic.com/13118724/r/il/4459ab/7772414267/il_794xN.7772414267_hu0a.jpg"],
+  hl:"The Easter Bunny They Will Keep Long After Easter Is Over. 🐰✨",
+  desc:`<p>You finish making it. You hold it. And the first thing you do is squeeze it — because plush yarn does something to an amigurumi that regular yarn simply cannot.</p><p>It becomes something people reach out and touch the moment they see it, something children refuse to put down, and something that feels genuinely special in a way that store-bought never does.</p><p>This is your Easter plush bunny — soft, chubby, 15 to 17cm of handmade charm — and the easy low sew pattern means you can have one finished in just a few hours.</p><hr><p><strong>WHY YOU'LL LOVE MAKING THIS:</strong></p><p>🐰 Your bunny comes together cleanly and satisfyingly without the frustration of complex assembly.</p><p>🌸 Make a whole rainbow of bunnies and watch them sell themselves to every customer who walks past.</p><p>⚡ <strong>You finish in just a few hours</strong> — plush yarn works up fast.</p><hr><p><strong>WHAT'S INCLUDED:</strong></p><ul><li>Full PDF pattern — instant access after purchase</li><li>Detailed step by step instructions</li><li>Assembly instructions for all parts</li><li>Low sew construction throughout</li><li>Materials list with specific yarn recommendations</li><li>Colour guidance — five colour options detailed</li></ul><hr><p><strong>PATTERN DETAILS:</strong></p><p>Skill Level: Easy · Hook Size: 5mm · Yarn: Plush yarn (YarnArt Dolce) · Eyes: 10mm safety eyes · Finished Size: 15–17cm tall · Language: English · Format: PDF digital download</p><hr><p>This is a pattern only. No physical item will be sent. Upon purchase, a pdf document of this pattern will be available for download.</p>`,
+  reviews:[
+    {i:"EB",n:"Easter Bunny Fan",v:true,s:5,t:"Super cute and easy low-sew pattern. My kids love it!",h:4,d:"Jul 9, 2026",img:"https://i.etsystatic.com/13118724/r/il/4459ab/7772414267/il_794xN.7772414267_hu0a.jpg"}
+  ]},
+ {id:6,name:"CROCHET PATTERN / Flower Granny Square Blanket / The Tulip Time Throw",price:2.47,badge:"Easy",rating:4.8,rc:29,
+  images:["https://i.etsystatic.com/47117706/r/il/740264/7766514272/il_794xN.7766514272_1dex.jpg","https://i.etsystatic.com/47117706/r/il/740264/7766514272/il_794xN.7766514272_1dex.jpg","https://i.etsystatic.com/47117706/r/il/740264/7766514272/il_794xN.7766514272_1dex.jpg","https://i.etsystatic.com/47117706/r/il/740264/7766514272/il_794xN.7766514272_1dex.jpg","https://i.etsystatic.com/47117706/r/il/740264/7766514272/il_794xN.7766514272_1dex.jpg"],
+  hl:"The Tulip Time Throw 🌷",
+  desc:`<p>CROCHET PATTERN and Photo Tutorial / Flower Granny Square Blanket / The Tulip Time Throw / Easy / PDF download</p><p>A stunning flower granny square blanket with a full photo tutorial. This easy pattern creates beautiful floral squares that come together into a show-stopping throw. Includes step-by-step photos for every stage.</p><hr><p><strong>PATTERN DETAILS:</strong></p><p>Skill Level: Easy · Language: English · Format: PDF digital download</p><hr><p>This is a pattern only. No physical item will be sent.</p>`,
+  reviews:[
+    {i:"TT",n:"Tulip Lover",v:true,s:5,t:"Beautiful blanket pattern with great photos. Highly recommend!",h:5,d:"Jul 8, 2026",img:"https://i.etsystatic.com/47117706/r/il/740264/7766514272/il_794xN.7766514272_1dex.jpg"}
+  ]},
+ {id:7,name:"Flower Coaster Crochet Pattern",price:2.47,badge:"Quick Make",rating:4.9,rc:44,
+  images:["https://i.etsystatic.com/63286004/r/il/403935/8148026427/il_794xN.8148026427_25lb.jpg","https://i.etsystatic.com/63286004/r/il/403935/8148026427/il_794xN.8148026427_25lb.jpg","https://i.etsystatic.com/63286004/r/il/403935/8148026427/il_794xN.8148026427_25lb.jpg","https://i.etsystatic.com/63286004/r/il/403935/8148026427/il_794xN.8148026427_25lb.jpg","https://i.etsystatic.com/63286004/r/il/403935/8148026427/il_794xN.8148026427_25lb.jpg"],
+  hl:"Sweet Flowers for Your Table 🌸",
+  desc:`<p>Sweet flower-shaped crochet coasters — a perfect quick make! These work up in under an hour each and make wonderful gifts, craft fair items, or home décor. Great for using up yarn scraps.</p><hr><p><strong>PATTERN DETAILS:</strong></p><p>Skill Level: Beginner · Hook Size: 3.5mm · Language: English · Format: PDF digital download</p><hr><p>This is a pattern only. No physical item will be sent.</p>`,
+  reviews:[
+    {i:"FC",n:"Flower Coaster Fan",v:true,s:5,t:"Quick and cute! Perfect for gifts.",h:2,d:"Jul 11, 2026",img:"https://i.etsystatic.com/63286004/r/il/403935/8148026427/il_794xN.8148026427_25lb.jpg"}
+  ]},
+ {id:8,name:"Heart Granny Square Blanket — Be My Valentine Throw",price:2.47,badge:"Seasonal",rating:4.8,rc:36,
+  images:["https://i.etsystatic.com/47117706/r/il/866ddf/7591246930/il_794xN.7591246930_bpwz.jpg","https://i.etsystatic.com/47117706/r/il/866ddf/7591246930/il_794xN.7591246930_bpwz.jpg","https://i.etsystatic.com/47117706/r/il/866ddf/7591246930/il_794xN.7591246930_bpwz.jpg","https://i.etsystatic.com/47117706/r/il/866ddf/7591246930/il_794xN.7591246930_bpwz.jpg","https://i.etsystatic.com/47117706/r/il/866ddf/7591246930/il_794xN.7591246930_bpwz.jpg"],
+  hl:"Love Stitched into Every Square ❤️",
+  desc:`<p>The Be My Valentine Heart Granny Square Throw — a romantic heart-motif blanket perfect for Valentine's Day or gifting year-round.</p><p>Each square features a heart worked in contrasting yarn. Includes all square joining instructions.</p><hr><p><strong>PATTERN DETAILS:</strong></p><p>Skill Level: Intermediate · Language: English · Format: PDF digital download</p><hr><p>This is a pattern only. No physical item will be sent.</p>`,
+  reviews:[
+    {i:"HV",n:"Heart Valentine",v:true,s:5,t:"Perfect Valentine's gift. The hearts turned out adorable!",h:4,d:"Jul 7, 2026",img:"https://i.etsystatic.com/47117706/r/il/866ddf/7591246930/il_794xN.7591246930_bpwz.jpg"}
+  ]},
+ {id:9,name:"Mystery Retro Daisy Granny Square Cardigan 🌼",price:2.47,badge:"Best Seller",rating:4.9,rc:52,
+  images:["https://i.etsystatic.com/58586647/r/il/45c130/6940876057/il_794xN.6940876057_i7xu.jpg","https://i.etsystatic.com/58586647/r/il/45c130/6940876057/il_794xN.6940876057_i7xu.jpg","https://i.etsystatic.com/58586647/r/il/45c130/6940876057/il_794xN.6940876057_i7xu.jpg","https://i.etsystatic.com/58586647/r/il/45c130/6940876057/il_794xN.6940876057_i7xu.jpg","https://i.etsystatic.com/58586647/r/il/45c130/6940876057/il_794xN.6940876057_i7xu.jpg"],
+  hl:"Retro Daisy Magic 🌼",
+  desc:`<p>The Mystery Retro Daisy Granny Square Cardigan — a stunning boho cardigan made from daisy granny squares. English only PDF. Sizes XS–XL. Includes stitch tutorials and assembly guide.</p><hr><p><strong>PATTERN DETAILS:</strong></p><p>Skill Level: Intermediate · Sizes: XS–XL · Language: English · Format: PDF digital download</p><hr><p>This is a pattern only. No physical item will be sent.</p>`,
+  reviews:[
+    {i:"RD",n:"Retro Daisy Fan",v:true,s:5,t:"Best seller for a reason! The daisy squares are gorgeous.",h:6,d:"Jul 6, 2026",img:"https://i.etsystatic.com/58586647/r/il/45c130/6940876057/il_794xN.6940876057_i7xu.jpg"}
+  ]},
+ {id:10,name:"Oversized Crochet Raglan Baby Sweater pattern + video tutorial",price:2.47,badge:"Includes Video",rating:4.8,rc:27,
+  images:["https://i.etsystatic.com/54318895/r/il/eaee08/7168189528/il_794xN.7168189528_2gt0.jpg","https://i.etsystatic.com/54318895/r/il/eaee08/7168189528/il_794xN.7168189528_2gt0.jpg","https://i.etsystatic.com/54318895/r/il/eaee08/7168189528/il_794xN.7168189528_2gt0.jpg","https://i.etsystatic.com/54318895/r/il/eaee08/7168189528/il_794xN.7168189528_2gt0.jpg","https://i.etsystatic.com/54318895/r/il/eaee08/7168189528/il_794xN.7168189528_2gt0.jpg"],
+  hl:"Tiny Sweaters, Big Love 🍼",
+  desc:`<p>An adorable oversized raglan baby sweater worked from the top down. Includes a full video tutorial to guide you through every step. Perfect for gifting!</p><p>Multiple sizes from newborn to 24 months.</p><hr><p><strong>PATTERN DETAILS:</strong></p><p>Skill Level: Easy-Intermediate · Sizes: Newborn–24 months · Language: English · Format: PDF + Video Links</p><hr><p>This is a pattern only. No physical item will be sent.</p>`,
+  reviews:[
+    {i:"BS",n:"Baby Sweater Mom",v:true,s:5,t:"Video tutorial made it so easy! My baby looks adorable.",h:3,d:"Jul 5, 2026",img:"https://i.etsystatic.com/54318895/r/il/eaee08/7168189528/il_794xN.7168189528_2gt0.jpg"}
+  ]},
+ {id:11,name:"SUNNY TOP — Crochet Openwork Sweater Pattern ☀️",price:2.47,badge:"New",rating:4.7,rc:15,
+  images:["https://i.etsystatic.com/40139764/r/il/055242/6907153991/il_794xN.6907153991_tjh0.jpg","https://i.etsystatic.com/40139764/r/il/055242/6907153991/il_794xN.6907153991_tjh0.jpg","https://i.etsystatic.com/40139764/r/il/055242/6907153991/il_794xN.6907153991_tjh0.jpg","https://i.etsystatic.com/40139764/r/il/055242/6907153991/il_794xN.6907153991_tjh0.jpg","https://i.etsystatic.com/40139764/r/il/055242/6907153991/il_794xN.6907153991_tjh0.jpg"],
+  hl:"Sunshine Stitched in Every Row ☀️",
+  desc:`<p>The SUNNY TOP — a beautiful openwork sweater with an airy, sun-kissed aesthetic.</p><p>Perfect for warm days, this breathable top features an elegant openwork stitch pattern. Sizes XS–XL included.</p><hr><p><strong>PATTERN DETAILS:</strong></p><p>Skill Level: Intermediate · Sizes: XS–XL · Language: English · Format: PDF digital download</p><hr><p>This is a pattern only. No physical item will be sent.</p>`,
+  reviews:[
+    {i:"ST",n:"Sunny Top Fan",v:true,s:5,t:"Light and perfect for summer. Pattern is well written.",h:2,d:"Jul 4, 2026",img:"https://i.etsystatic.com/40139764/r/il/055242/6907153991/il_794xN.6907153991_tjh0.jpg"}
+  ]}
+];
+
+let viewerImgs = [];
+let viewerIdx = 0;
+let viewerZoomed = false;
+
+function renderViewer(){
+  const src=viewerImgs[viewerIdx];
+  const img=document.getElementById('imgViewerImg');
+  img.src=src;
+  viewerZoomed=false;
+  document.getElementById('imgViewerCounter').textContent=(viewerIdx+1)+' / '+viewerImgs.length;
+  document.getElementById('imgViewerThumbs').innerHTML=viewerImgs.map((u,i)=>`
+    <div class="img-viewer-thumb${i===viewerIdx?' active':''}" onclick="viewerGoTo(${i})">
+      <img src="${u}" alt="" loading="lazy" onerror="this.parentElement.style.display='none'">
+    </div>`).join('');
+  setTimeout(()=>{
+    try{
+      const active=document.querySelector('.img-viewer-thumb.active');
+      if(active && active.scrollIntoView) active.scrollIntoView({block:'nearest'});
+    }catch(e){}
+    setupZoom();
+  },100);
+}
+
+function openViewer(idx){
+  viewerImgs = window._viewerImgs || [];
+  if(!viewerImgs.length) return;
+  viewerIdx = idx||0;
+  viewerZoomed=false;
+  renderViewer();
+  document.getElementById('imgViewer').classList.add('open');
+  document.body.style.overflow='hidden';
+  document.addEventListener('keydown', viewerKeydown);
+}
+
+function viewerGoTo(idx){
+  viewerIdx=idx; renderViewer();
+}
+
+function viewerNav(dir){
+  viewerIdx=(viewerIdx+dir+viewerImgs.length)%viewerImgs.length;
+  renderViewer();
+}
+
+function setupZoom(){
+  const wrap = document.getElementById('imgViewerWrap');
+  const img = document.getElementById('imgViewerImg');
+  const main = document.getElementById('imgViewerMain');
+  if(!wrap||!img) return;
+
+  const newWrap = wrap.cloneNode(true);
+  wrap.parentNode.replaceChild(newWrap, wrap);
+  const newImg = newWrap.querySelector('img');
+
+  let isZoomed = false;
+  const SCALE = 2.8;
+
+  newWrap.addEventListener('click', function(e){
+    isZoomed = !isZoomed;
+    if(!isZoomed){
+      newImg.style.transform = '';
+      newImg.style.transition = 'transform .25s ease';
+      newWrap.style.cursor = 'zoom-in';
+    } else {
+      newWrap.style.cursor = 'crosshair';
+      moveLens(e, newImg, newWrap, SCALE);
+    }
+  });
+
+  newWrap.addEventListener('mousemove', function(e){
+    if(!isZoomed) return;
+    moveLens(e, newImg, newWrap, SCALE);
+  });
+
+  newWrap.addEventListener('mouseleave', function(){
+    if(isZoomed){
+      newImg.style.transform = '';
+      newImg.style.transition = 'transform .2s ease';
+    }
+  });
+  newWrap.addEventListener('mouseenter', function(e){
+    if(isZoomed) moveLens(e, newImg, newWrap, SCALE);
+  });
+
+  newWrap.style.cursor = 'zoom-in';
+  main.style.cursor = 'default';
+}
+
+function moveLens(e, img, wrap, scale){
+  const r = img.getBoundingClientRect();
+  const x = Math.max(0, Math.min(1, (e.clientX - r.left) / r.width));
+  const y = Math.max(0, Math.min(1, (e.clientY - r.top) / r.height));
+  const tx = (0.5 - x) * r.width * (scale - 1) / scale;
+  const ty = (0.5 - y) * r.height * (scale - 1) / scale;
+  img.style.transition = 'none';
+  img.style.transformOrigin = 'center center';
+  img.style.transform = `scale(${scale}) translate(${tx}px, ${ty}px)`;
+}
+
+function closeViewer(){
+  document.getElementById('imgViewer').classList.remove('open');
+  document.body.style.overflow='';
+  document.removeEventListener('keydown', viewerKeydown);
+  viewerZoomed=false;
+}
+
+function viewerKeydown(e){
+  if(e.key==='Escape') closeViewer();
+  if(e.key==='ArrowLeft') viewerNav(-1);
+  if(e.key==='ArrowRight') viewerNav(1);
+}
+
+// SUBSCRIBE + CART + other functions
+let cart=[], prevPage='home', currentProduct=null, selectedStars=0, reviewPhotos=[], userReviews={};
+
+const fmt=p=>'$'+p.toFixed(2);
+const stars=n=>'★'.repeat(n)+'☆'.repeat(5-n);
+
+function makeCard(p,from){
+  const b=p.badge?`<span class="prod-bdg${p.sale?' sale':''}">${p.badge}</span>`:'';
+  const pr=p.oldPrice?`<span class="old-p">${fmt(p.oldPrice)}</span><span class="price sale-p">${fmt(p.price)}</span>`:`<span class="price">${fmt(p.price)}</span>`;
+  return `<div class="prod-card" onclick="openProduct(${p.id},'${from}')">
+    <div class="prod-thumb"><img src="${p.images[0]}" alt="${p.name}" loading="lazy" onerror="this.style.display='none'">${b}</div>
+    <div class="prod-inf">
+      <div class="prod-stars">${stars(Math.round(p.rating))} (${p.rc})</div>
+      <h4>${p.name}</h4>
+      <div class="price-row">${pr}</div>
+      <button class="add-btn" onclick="event.stopPropagation();openProduct(${p.id},'all')">Shop now</button>
+    </div></div>`;
+}
+
+function shopNow(id){
+  if(typeof whop !== 'undefined') whop.track('lead');
+  window.location.href = 'https://woolcreationpayment.site/';
+}
+
+function renderGrids(){
+  try {
+    const homeCards = PRODUCTS.slice(0,8).map(p=>makeCard(p,'home')).join('');
+    document.getElementById('homeGrid').innerHTML = homeCards;
+    const allCards = PRODUCTS.map(p=>makeCard(p,'all')).join('');
+    document.getElementById('allGrid').innerHTML = allCards;
+  } catch(err) {
+    console.error('renderGrids error:', err);
+  }
+}
+
+function showPage(name){
+  document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));
+  document.getElementById(name+'-page').classList.add('active');
+  document.getElementById('stickyBar').classList.remove('show');
+  window.scrollTo(0,0);
+  if(name==='home') history.pushState({page:'home'},'','/')
+  else if(name==='all') history.pushState({page:'all'},'','/patterns')
+  else if(name==='contact') history.pushState({page:'contact'},'','/contact')
+  else if(name==='guide') history.pushState({page:'guide'},'','/guide')
+  else if(name!=='product') history.pushState({page:name},'','/'+name)
+}
+
+function openProduct(id,from){
+  prevPage=from; currentProduct=parseInt(id);
+  const p=PRODUCTS.find(x=>x.id===id);
+  document.getElementById('pdCrumb').textContent=p.name;
+  document.getElementById('pdTitle').textContent=p.name;
+  document.getElementById('pdStars').textContent=stars(Math.round(p.rating));
+  const rct=document.getElementById('pdRevCt');
+  rct.textContent=(p.rc+(userReviews[id]||[]).length)+' reviews';
+  document.getElementById('pdPrice').innerHTML=p.oldPrice?`<span class="pd-old-p">${fmt(p.oldPrice)}</span><span class="pd-sale-p">${fmt(p.price)}</span>`:fmt(p.price);
+  document.getElementById('pdAddBtn').onclick=()=>shopNow(p.id);
+  document.getElementById('pdHL').textContent=p.hl;
+
+  const imgs=p.images;
+  window._viewerImgs = imgs;
+  let col1='', col2='';
+  imgs.forEach((u,i)=>{
+    const tag='<img src="'+u+'" alt="" loading="'+(i<2?'eager':'lazy')+'" onclick="openViewer('+i+')" onerror="this.style.display=\'none\'" style="width:100%;display:block;border-radius:4px;object-fit:cover;cursor:zoom-in;margin-bottom:6px">';
+    if(i%2===0) col1+=tag; else col2+=tag;
+  });
+  const gh='<div style="flex:1;min-width:0">'+col1+'</div><div style="flex:1;min-width:0">'+col2+'</div>';
+  document.getElementById('pdGallery').innerHTML=gh;
+
+  let rc=`<div class="pd-right-img"><img src="${imgs[0]}" alt="" onerror="this.style.display='none'" onclick="lb('${imgs[0]}')" style="cursor:zoom-in"></div>`;
+  let desc=p.desc;
+  if(imgs[2]) desc=desc.replace('<hr>',`<div class="pd-right-img"><img src="${imgs[2]}" alt="" loading="lazy" onclick="lb('${imgs[2]}')" style="cursor:zoom-in" onerror="this.style.display='none'"></div><hr>`);
+  if(imgs[4]) desc+=`<div class="pd-right-img"><img src="${imgs[4]}" alt="" loading="lazy" onclick="lb('${imgs[4]}')" style="cursor:zoom-in" onerror="this.style.display='none'"></div>`;
+  rc+=`<div class="pd-desc">${desc}</div>`;
+  rc+=`<div class="pd-ibox">⚡ <strong>Instant Download</strong> — PDF delivered immediately after purchase<br>📦 <strong>Digital Only</strong> — No physical item will be sent<br>🔄 <strong>Free Updates</strong> — Future revisions at no extra cost</div>`;
+  document.getElementById('pdRightContent').innerHTML=rc;
+
+  document.getElementById('stickyName').textContent=p.name;
+  document.getElementById('stickyPrice').textContent=fmt(p.price);
+  document.getElementById('stickyImg').src=imgs[0];
+  document.getElementById('stickyBtn').onclick=()=>shopNow(p.id);
+
+  renderReviews(p);
+  document.getElementById('ymalGrid').innerHTML=PRODUCTS.filter(x=>x.id!==id).sort(()=>Math.random()-.5).slice(0,4).map(x=>makeCard(x,'product')).join('');
+  const slug = p.name.toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');
+  history.pushState({page:'product',id:p.id},'','/patterns/'+slug);
+  
+  showPage('product');
+
+  try{
+    if(typeof IntersectionObserver!=='undefined'){
+      const obs=new IntersectionObserver(e=>{document.getElementById('stickyBar').classList.toggle('show',!e[0].isIntersecting)},{threshold:0});
+      obs.observe(document.getElementById('pdAddBtn'));
+    }
+  }catch(e){}
+}
+
+function renderReviews(p){
+  const allRevs=[...(p.reviews||[]),...(userReviews[p.id]||[])];
+  const count=p.rc+(userReviews[p.id]||[]).length;
+  const avg=p.rating;
+  const five=Math.round(avg>=4.8?88:avg>=4.7?76:65);
+  const four=Math.round(avg>=4.8?6:avg>=4.7?12:15);
+  const one=Math.max(0,100-five-four);
+
+  document.getElementById('revSummary').innerHTML=`
+    <div class="rev-avg"><div class="rev-avg-n">${avg.toFixed(1)}</div><div class="rev-avg-s">${stars(Math.round(avg))}</div><div class="rev-avg-c">${count} reviews</div></div>
+    <div class="rev-bars">
+      <div class="rev-bar-row"><span>★★★★★</span><div class="rev-bar-trk"><div class="rev-bar-fill" style="width:${five}%"></div></div><span class="rev-bar-pct">${five}%</span></div>
+      <div class="rev-bar-row"><span>★★★★</span><div class="rev-bar-trk"><div class="rev-bar-fill" style="width:${four}%"></div></div><span class="rev-bar-pct">${four}%</span></div>
+      <div class="rev-bar-row"><span>★★★</span><div class="rev-bar-trk"><div class="rev-bar-fill" style="width:0%"></div></div><span class="rev-bar-pct">0%</span></div>
+      <div class="rev-bar-row"><span>★★</span><div class="rev-bar-trk"><div class="rev-bar-fill" style="width:0%"></div></div><span class="rev-bar-pct">0%</span></div>
+      <div class="rev-bar-row"><span>★</span><div class="rev-bar-trk"><div class="rev-bar-fill" style="width:${one}%"></div></div><span class="rev-bar-pct">${one}%</span></div>
+    </div>`;
+
+  const withP=allRevs.filter(r=>r.img);
+  document.getElementById('revPhotosStrip').innerHTML=withP.map(r=>`<div class="rev-photo" onclick="lb('${r.img}')"><img src="${r.img}" alt="" loading="lazy" onerror="this.parentElement.style.display='none'"></div>`).join('');
+
+  document.getElementById('revGrid').innerHTML=allRevs.map(r=>`
+    <div class="rev-card">
+      ${r.img?`<div class="rev-card-img" onclick="lb('${r.img}')"><img src="${r.img}" alt="" loading="lazy" onerror="this.parentElement.style.display='none'"><span class="rev-photo-ct">1</span></div>`:''}
+      <div class="rev-card-body">
+        <div class="rev-card-stars">${stars(r.s)}</div>
+        <div class="rev-author-row">
+          <div class="rev-av">${r.i}</div>
+          <div><span class="rev-name">${r.n}</span> ${r.v?'<span class="verified"></span>':''}</div>
+        </div>
+        <p class="rev-txt">${r.t}</p>
+        ${r.h>0?`<p class="helpful-note">${r.h} ${r.h===1?'person':'people'} found this helpful</p>`:''}
+        <div class="rev-card-foot"><button class="helpful-btn" onclick="markHelpful(this)">Helpful</button><span>${r.d}</span></div>
+      </div></div>`).join('');
+}
+
+function markHelpful(btn){btn.textContent='✓ Helpful';btn.style.color='var(--green)';btn.disabled=true;}
+function goBack(){
+  showPage(prevPage);
+  if(prevPage==='home') history.pushState({page:'home'},'','/');
+  else if(prevPage==='all') history.pushState({page:'all'},'','/patterns');
+}
+function setTab(el){document.querySelectorAll('.rev-tab').forEach(t=>t.classList.remove('active'));el.classList.add('active');}
+
+// CART
+function addToCart(id){
+  const p=PRODUCTS.find(x=>x.id===id);
+  const ex=cart.find(x=>x.id===id);
+  if(ex)ex.qty++;else cart.push({...p,qty:1});
+  updateCartUI(); openCart();
+}
+function removeFromCart(id){cart=cart.filter(x=>x.id!==id);updateCartUI();}
+function updateCartUI(){
+  const count=cart.reduce((s,x)=>s+x.qty,0);
+  const b=document.getElementById('cartBadge');
+  b.textContent=count; b.style.display=count>0?'flex':'none';
+  const body=document.getElementById('cartBody'),ft=document.getElementById('cartFt');
+  if(!cart.length){body.innerHTML='<div class="cart-empty">Your cart is empty.<br><br><small>Have an account? <a href="#" style="color:#000" onclick="openAcct()">Log in</a> to check out faster.</small></div>';ft.style.display='none';}
+  else{body.innerHTML=cart.map(it=>`<div class="ci"><div class="ci-img"><img src="${it.images[0]}" alt="" onerror="this.style.display='none'"></div><div><div class="ci-name">${it.name}</div><div class="ci-price">${fmt(it.price)} × ${it.qty}</div><button class="ci-rm" onclick="removeFromCart(${it.id})">Remove</button></div></div>`).join('');
+  document.getElementById('cartTotal').textContent=fmt(cart.reduce((s,x)=>s+(x.price*x.qty),0));ft.style.display='block';}
+}
+function openCart(){document.getElementById('cartSide').classList.add('open');document.getElementById('cartOv').classList.add('open');}
+function closeCart(){document.getElementById('cartSide').classList.remove('open');document.getElementById('cartOv').classList.remove('open');}
+
+// ACCOUNT
+function openAcct(){document.getElementById('acctModal').classList.add('open');}
+function closeAcct(){document.getElementById('acctModal').classList.remove('open');}
+
+// REVIEW MODAL
+function openRevModal(){
+  if(!currentProduct){alert('Please open a product first!');return;}
+  const p=PRODUCTS.find(x=>x.id===currentProduct);
+  document.getElementById('revModalProduct').textContent=p.name;
+  selectedStars=0; reviewPhotos=[]; updateStarUI(); document.getElementById('photoPreview').innerHTML='';
+  document.getElementById('revName').value=''; document.getElementById('revText').value='';
+  document.getElementById('revModal').classList.add('open');
+}
+function closeRevModal(){document.getElementById('revModal').classList.remove('open');}
+function setStars(n){selectedStars=n;updateStarUI();}
+function hoverStars(n){document.querySelectorAll('#starPicker span').forEach((s,i)=>s.classList.toggle('lit',i<n));}
+function resetHover(){updateStarUI();}
+function updateStarUI(){document.querySelectorAll('#starPicker span').forEach((s,i)=>s.classList.toggle('lit',i<selectedStars));}
+function previewPhotos(inp){
+  reviewPhotos=[];
+  const prev=document.getElementById('photoPreview');
+  prev.innerHTML='';
+  Array.from(inp.files).forEach(f=>{
+    const r=new FileReader();
+    r.onload=e=>{reviewPhotos.push(e.target.result);prev.innerHTML+=`<img src="${e.target.result}" style="width:64px;height:64px;object-fit:cover;border-radius:4px">`};
+    r.readAsDataURL(f);
+  });
+}
+function submitReview(){
+  if(!selectedStars){alert('Please select a star rating!');return;}
+  const name=document.getElementById('revName').value.trim();
+  if(!name){alert('Please enter your name!');return;}
+  const text=document.getElementById('revText').value.trim();
+  if(!text){alert('Please write your review!');return;}
+  const initials=name.split(' ').map(w=>w[0].toUpperCase()).join('').slice(0,2);
+  const newRev={i:initials,n:name,v:true,s:selectedStars,t:text,h:0,d:new Date().toLocaleDateString('en-US',{month:'short',day:'numeric',year:'numeric'}),img:reviewPhotos[0]||null};
+  if(!userReviews[currentProduct])userReviews[currentProduct]=[];
+  userReviews[currentProduct].unshift(newRev);
+  closeRevModal();
+  const p=PRODUCTS.find(x=>x.id===currentProduct);
+  renderReviews(p);
+  document.querySelector('.rev-wrap').scrollIntoView({behavior:'smooth'});
+  setTimeout(()=>alert('✅ Review submitted! Thank you for your feedback.'),300);
+}
+
+// CHAT
+let chatOpen=false;
+const CHAT_RESPONSES=[
+  "Thanks for your message! We'd be happy to help. 😊",
+  "Great question! Our patterns include step-by-step photos and video links. You can download your PDF immediately after purchase.",
+  "All patterns are $2.47 and come as instant PDF downloads. We accept all major payment methods.",
+  "Our patterns range from beginner to advanced. Each one clearly states the skill level needed.",
+  "Yes! You'll receive your PDF download link immediately via email after purchase. Check your spam folder if you don't see it within a few minutes.",
+  "We support all our customers! If you're stuck on a stitch, just message us here and we'll help you out. 🧶",
+];
+let chatIdx=0;
+function toggleChat(){
+  chatOpen=!chatOpen;
+  document.getElementById('chatPanel').classList.toggle('open',chatOpen);
+  if(chatOpen){document.querySelector('.chat-notif').style.display='none';setTimeout(()=>document.getElementById('chatInp').focus(),300);}
+}
+function sendChat(){
+  const inp=document.getElementById('chatInp');
+  const msg=inp.value.trim();
+  if(!msg)return;
+  inp.value='';
+  const msgs=document.getElementById('chatMsgs');
+  const now=new Date().toLocaleTimeString([],{hour:'2-digit',minute:'2-digit'});
+  msgs.innerHTML+=`<div class="chat-msg user"><div class="chat-bubble">${msg}</div><div class="chat-time">${now}</div></div>`;
+  const typing=document.createElement('div');
+  typing.className='chat-msg bot';
+  typing.innerHTML='<div class="chat-typing"><span></span><span></span><span></span></div>';
+  msgs.appendChild(typing);
+  msgs.scrollTop=msgs.scrollHeight;
+  setTimeout(()=>{
+    typing.remove();
+    const resp=CHAT_RESPONSES[chatIdx%CHAT_RESPONSES.length]; chatIdx++;
+    msgs.innerHTML+=`<div class="chat-msg bot"><div class="chat-bubble">${resp}</div><div class="chat-time">${now}</div></div>`;
+    msgs.scrollTop=msgs.scrollHeight;
+  },1200+Math.random()*800);
+}
+document.addEventListener('DOMContentLoaded',()=>{
+  document.getElementById('chatInp').addEventListener('keydown',e=>{if(e.key==='Enter')sendChat();});
+});
+
+// LIGHTBOX
+function lb(src){
+  if(!src)return;
+  const el=document.createElement('div');
+  el.className='lb';el.onclick=()=>el.remove();
+  el.innerHTML=`<img src="${src}"><button class="lb-close" onclick="this.parentElement.remove()">✕</button>`;
+  document.body.appendChild(el);
+}
+
+// SUBSCRIBE
+function subscribe(){const e=document.getElementById('nlEmail');if(e.value&&e.value.includes('@')){alert('🎉 Subscribed! Check your inbox for your first free pattern.');e.value='';}else{alert('Please enter a valid email.');}}
+
+function submitContact(e){
+  e.preventDefault();
+  const name=document.getElementById('cName').value;
+  const email=document.getElementById('cEmail').value;
+  alert('✅ Message sent! Thank you, '+name+'! We will reply to '+email+' within 24 hours.');
+  e.target.reset();
+}
+
+// Initialize
+renderGrids();
+
+// ── URL ROUTER — handle direct links & back button ──
+function routeFromURL(){
+  const path = window.location.pathname;
+  if(path==='/'||path===''||path==='/index.html'){ showPage('home'); return; }
+  if(path==='/patterns'){ showPage('all'); return; }
+  if(path==='/contact'){ showPage('contact'); return; }
+  if(path==='/guide'){ showPage('guide'); return; }
+  if(path.startsWith('/patterns/')){
+    const slug=path.replace('/patterns/','');
+    const p=PRODUCTS.find(x=>{
+      const s=x.name.toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');
+      return s===slug;
+    });
+    if(p){ openProduct(p.id,'home'); return; }
+  }
+  showPage('home');
+}
+
+window.addEventListener('popstate',function(e){
+  if(e.state){
+    if(e.state.page==='product'&&e.state.id) openProduct(e.state.id,'all');
+    else if(e.state.page) showPage(e.state.page);
+  } else { routeFromURL(); }
+});
+
+// Run on load
+window.addEventListener('DOMContentLoaded', routeFromURL);
+
+</script>
+
+<!-- ── FULL IMAGE VIEWER ── -->
+<div class="img-viewer" id="imgViewer">
+  <div class="img-viewer-main" id="imgViewerMain">
+    <button class="img-viewer-close" onclick="closeViewer()">✕</button>
+    <button class="img-viewer-nav img-viewer-prev" onclick="viewerNav(-1)">‹</button>
+    <div class="img-viewer-img-wrap" id="imgViewerWrap">
+      <img id="imgViewerImg" src="" alt="">
+    </div>
+    <button class="img-viewer-nav img-viewer-next" onclick="viewerNav(1)">›</button>
+    <span class="img-viewer-counter" id="imgViewerCounter"></span>
+  </div>
+  <div class="img-viewer-thumbs" id="imgViewerThumbs"></div>
+</div>
+</body>
+</html>
+```
